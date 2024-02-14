@@ -3,6 +3,7 @@ import Link from 'next/link'
 import React from 'react'
 import CustomButton from './CustomButton'
 import DropdownButton from './DropdownButton'
+import { buttonVariants } from './ui/button'
 
 const Navbar = () => {
   return (
@@ -17,6 +18,11 @@ const Navbar = () => {
             className="object-contain"
           />
         </Link>
+        
+        {/* Wasi- Started Working from here */}
+        <Link className={buttonVariants()} href='/sign-in'>Sign In</Link>
+        
+        
         <div className='flex'>
           <DropdownButton/>
         </div>
