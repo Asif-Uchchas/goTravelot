@@ -9,7 +9,7 @@ import { Button } from "../ui/button";
 import Link from "next/link";
 import GoogleSignInButton from "../GoogleSignInButton";
 import { signIn } from "next-auth/react";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 
 const FormSchema = z.object({
     email: z.string().min(1,'Email is required').email('Invalid email'),
@@ -75,7 +75,11 @@ const onSubmit= async (values:z.infer<typeof FormSchema>)=>{
             )}
             />
         </div>
-        <Button className="w-full mt-6" type="submit">Sign In</Button>
+          <Link href="/">
+        <Button className="w-full mt-6" type="submit">
+            Sign In
+          </Button>
+          </Link>
       </form>
       <div className="mx-auto my-4 flex w-full items-center justify-evenly
       before:mr-4 before:block before:h-px before:flex-grow before:bg-stone-400

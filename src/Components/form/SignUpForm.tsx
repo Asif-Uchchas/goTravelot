@@ -8,7 +8,7 @@ import { Input } from "../ui/input";
 import { Button } from "../ui/button";
 import Link from "next/link";
 import GoogleSignInButton from "../GoogleSignInButton";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 
 const FormSchema = z.object({
     username: z.string().min(1,'Username is required').max(100),
