@@ -41,7 +41,7 @@ const Popular = () => {
 
       </div>
 
-      <div className="flex mt-8">
+      <div className="flex mt-4">
       {imagesBottom.map((image) => (
         <div key={image.alt} className="relative  mr-4 ">
             <a href={image.link}>
