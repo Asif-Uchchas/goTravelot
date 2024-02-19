@@ -1,0 +1,9 @@
+<Image
+            src="/rec.jpg"
+            alt="Hero Image"
+            layout="responsive"
+            width={2000}
+            height={300}
+            objectPosition="top"  
+          />
+    

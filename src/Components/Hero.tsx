@@ -2,23 +2,44 @@
 import React from 'react'
 import ImageCarousel from './ImageCarousel'
 import Image from 'next/image'
+import LocationSetter from './LocationSetter'
+import Offer from './Offer'
+import Popular from './Popular'
 
 const Hero = () => {
   return (
-    <div className="w-screen  items-center justify-center">    
-      <div className="flex-1 ">
-         <Image
-            src="/rec.jpg"
-            alt="Hero Image"
-            layout="responsive"
-            width={2000}
-            height={300}
-            objectPosition="top"  
-          />
-    
-        <h1 className="text-4xl font-bold text-black">Welcome to goTravelot</h1>
-        <p className="text-black text-lg">The best place to find the best travel deals</p>
-      </div>
+    <div className="w-screen  items-center justify-center ">    
+      <div className=" flex items-center justify-center  relative">
+          <Image
+              src="/rec.jpg"
+              alt="Hero Image"
+              width={2000}
+              height={200}
+            />
+            <div className="absolute top-0 left-0 right-0 bottom-0 flex flex-col items-center justify-center space-y-4">
+              <p className="text-white text-4xl font-bold md:text-6xl lg:text-8xl shadow-sm">
+                  <span style={{ color: "#E7FCFD" }}>Welcome to </span>
+                  <span style={{ color: "#EE9B00" }}>go</span>
+                  <span style={{ color: "#2C5768" }}>Travel</span>
+                  <span style={{ color: "#EE9B00" }}>ot</span>
+              </p>
+              <p className="text-[#E7FCFD] text-2xl font-bold md:text-3xl lg:text-4xl shadow-sm">
+                The best place to find the best travel deals
+              </p>
+              <div className=" flex items-center justify-center ">
+                  <LocationSetter/>
+              </div>
+              
+          </div>
+      
+        </div>
+        <div className=" flex items-center justify-center  relative">
+          <Offer/>
+        </div>
+        <div className=" flex items-center justify-center  relative">
+          <Popular/>
+        </div>
+      
     </div>
   )
 }

@@ -20,10 +20,11 @@ const Navbar = () => {
         </Link>
         
         {/* Wasi- Started Working from here */}
-        <Link className={buttonVariants()} href='/sign-in'>Sign In</Link>
         
         
-        <div className='flex'>
+        <div className='flex '>
+           <Link className={buttonVariants()} href='/sign-in'>Sign In</Link>
+           
           <DropdownButton/>
         </div>
       </nav>

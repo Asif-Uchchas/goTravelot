@@ -21,8 +21,7 @@ const Footer = () => {
         </div>
         {/* links */}
       </div>
-      <div className="flex justify-between items-center flex-wrap 
-        mt-10 sm:px-16 px-6 py-10">
+      <div className="flex justify-between items-center flex-wrap  mt-10 sm:px-16 px-6 py-10">
         <p className=" text-white">@2024 goTravelot. All Rights Reserved</p>
         <div className="footer__copyrights-link">
           <Link href="/" className="text-white">
