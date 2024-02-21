@@ -32,16 +32,19 @@ const Navbar = () => {
             <Link href="/">
               <CustomButton title="Home" containerStyles="nav-button" />
             </Link>
+            <Link href="/#offers">
+              <CustomButton title="Offers" containerStyles="nav-button" />
+            </Link>
             <Link href="/#hotels">
               <CustomButton title="Hotels" containerStyles="nav-button" />
             </Link>
             <Link href="/#places">
               <CustomButton title="Places" containerStyles="nav-button" />
             </Link>
-            <Link href="/#contact">
+            <Link href="/contact">
               <CustomButton title="Contact" containerStyles="nav-button" />
             </Link>
-            <Link href="/#faq">
+            <Link href="/faq">
               <CustomButton title="FAQ" containerStyles="nav-button" />
             </Link>
             <Link href="/sign-in">
@@ -101,12 +104,12 @@ const Navbar = () => {
                   </Link>
                 </li>
                 <li onClick={() => setNav(false)} className="py-4 text-sm">
-                  <Link href="/#contact">
+                  <Link href="/contact">
                     <CustomButton title="Contact" textStyles="uppercase" />
                   </Link>
                 </li>
                 <li onClick={() => setNav(false)} className="py-4 text-sm">
-                  <Link href="/#faq">
+                  <Link href="/faq">
                     <CustomButton title="FAQ" textStyles="uppercase" />
                   </Link>
                 </li>

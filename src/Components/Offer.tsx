@@ -5,7 +5,7 @@ import LocationSetter from './LocationSetter'
 
 const Offer = () => {
   return (
-    <div className="w-screen  items-center justify-center p-10 ">    
+    <div id='offers' className="w-screen  items-center justify-center p-10 ">    
       <div className=" flex relative flex-col  space-y-4">
         <p className=" text-2xl font-semibold md:text-3xl lg:text-4xl">
             Offers
