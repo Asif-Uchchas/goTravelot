@@ -33,7 +33,7 @@ const Popular = () => {
                     <a href={image.link}>   
                         <img src={image.src} alt={image.alt} className="w-full rounded-md " />
                         <div  className="absolute  left-10 top-0 h-16 w-24 flex items-center justify-center font-semibold">
-                            <p className=" text-white text-lg md:text-lg lg:text-xl drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] 	">Yelinberg</p>
+                            <p className=" text-white text-sm md:text-lg lg:text-xl drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] 	">Yelinberg</p>
                         </div>
                     </a> 
                 </div>
@@ -48,7 +48,7 @@ const Popular = () => {
                 <img src={image.src} alt={image.alt} className="w-full h-full object-cover rounded-md" />
                 
                     <div  className="absolute left-10 top-0 h-16 w-24  flex items-center justify-center font-semibold ">
-                        <p className=" text-white text-lg md:text-lg lg:text-xl drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">Yelinberg</p>
+                        <p className=" text-white text-sm md:text-lg lg:text-xl drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">Yelinberg</p>
                     </div>
           </a>
         </div>
