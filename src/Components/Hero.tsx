@@ -5,9 +5,12 @@ import Image from 'next/image'
 import LocationSetter from './LocationSetter'
 import Offer from './Offer'
 import Popular from './Popular'
+
 import TopHotels from './TopHotels'
 import ResponsiveComponentSwitcher from './ResponsiveComponentSwitcher'
 import Popular_mobile from './Popular_mobile'
+import PopularHotels from './PopularHotels'
+
 
 const Hero = () => {
   return (
@@ -45,6 +48,9 @@ const Hero = () => {
         </div>
         <div className=" flex items-center justify-center  relative">
           <TopHotels/>
+        </div>
+        <div className=" flex items-center justify-center  relative">
+          <PopularHotels/>
         </div>
       
     </div>

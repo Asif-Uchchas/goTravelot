@@ -24,10 +24,10 @@ const Footer = () => {
       <div className="flex justify-between items-center flex-wrap  mt-10 sm:px-16 px-6 py-10">
         <p className=" text-white">@2024 goTravelot. All Rights Reserved</p>
         <div className="footer__copyrights-link">
-          <Link href="/" className="text-white">
+          <Link href="/" className="text-white mx-2">
           Terms of use 
           </Link>
-          <Link href="/" className="text-white">
+          <Link href="/" className="text-white mx-2">
           Privacy Policy
           </Link>
         </div>

@@ -15,7 +15,7 @@ const Popular = () => {
       ];
 
   return (
-    <div className="w-screen  items-center justify-center p-10 ">    
+    <div id='places' className="w-screen  items-center justify-center p-10 ">    
       <div className=" flex relative flex-col  space-y-4">
         <p className=" text-2xl font-semibold md:text-3xl lg:text-4xl">
             Popular Destinations
