@@ -1,4 +1,5 @@
 // LocationSetter.tsx
+"use client"
 import React, { useState } from 'react';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
@@ -6,6 +7,8 @@ import './styles.css'; // Import the styles
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faCalendar } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { buttonVariants } from './ui/button'
+import Link from 'next/link'
 
 library.add(faCalendar);
 
@@ -33,7 +36,8 @@ const LocationSetter: React.FC = () => {
         </div>
         <input type="number" className="p-3 mb-1 md:mr-1 md:mb-0 border border-gray-300 rounded-md shadow-md w-full md:w-1/2" placeholder="Number of people" />
         <input type="number" className="p-3 mb-1 md:mr-1 md:mb-0 border border-gray-300 rounded-md shadow-md w-full md:w-1/2" placeholder="Number of rooms" />
-        <button className="bg-sky-900 text-white p-4 rounded-md hover:bg-sky-950 shadow-md w-full md:w-auto">Search</button>
+        <Link href='/pages/search'><button className="bg-sky-900 text-white p-4 rounded-md hover:bg-sky-950 shadow-md w-full md:w-auto">Search</button></Link>
+        
       </div>
     </div>
   );
