@@ -1,6 +1,9 @@
 "use client "
 import LocationSetter from '@/Components/LocationSetter'
 import React from 'react'
+import SearchResults from './SearchResults'
+import SearchCard from './SearchCards'
+import SearchTag from './SearchTags'
 
 function Main() {
   return (
@@ -20,6 +23,10 @@ function Main() {
   <div className=" flex items-center justify-center ">
           <LocationSetter/>
     </div>
+  <div>
+    {/* <SearchCard name='Yelin' imgUrl='../rec.jpg'/> */}
+    <SearchResults/>
+  </div>
     
   </div>
   )

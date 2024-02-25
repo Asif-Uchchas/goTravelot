@@ -15,14 +15,14 @@ const SearchCard: React.FC<SearchCardProps> = ({
 }) => {
   return (
     <div>
-      <div
-        className="h-52 md:h-72 rounded-t-xl relative group"
-        style={{ background: `url(${imgUrl})`, backgroundSize: "cover" }}
-      >
+      <Link href={'/'}> 
+      <div className="w-80 h-36 md:h-72 md:40 rounded relative group" style={{ background: `url(${imgUrl})`, backgroundSize: "cover" }}>
+        <div className="text-white rounded-b-xl mt-3 py-6 px-8 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
+            <h5 className="text-xl font-semibold mb-2">{name}</h5>
+        </div>
       </div>
-      <div className="text-white rounded-b-xl mt-3 bg-[#181818] py-6 px-8">
-        <h5 className="text-xl font-semibold mb-2">{name}</h5>
-      </div>
+      
+      </Link> 
     </div>
   );
 };

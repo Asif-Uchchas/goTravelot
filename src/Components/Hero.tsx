@@ -49,9 +49,6 @@ const Hero = () => {
         <div className=" flex items-center justify-center  relative">
           <TopHotels/>
         </div>
-        <div className=" flex items-center justify-center  relative">
-          <PopularHotels/>
-        </div>
       
     </div>
   )
