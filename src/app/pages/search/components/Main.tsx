@@ -23,8 +23,7 @@ function Main() {
   <div className=" flex items-center justify-center ">
           <LocationSetter/>
     </div>
-  <div>
-    {/* <SearchCard name='Yelin' imgUrl='../rec.jpg'/> */}
+  <div className=" flex items-center justify-center ">
     <SearchResults/>
   </div>
     
