@@ -1,6 +1,7 @@
+import { ContactInfoProps } from '@/types';
 import React from 'react';
 
-const ContactInfo = () => {
+const ContactInfo = ({address, phone, email}: ContactInfoProps) => {
   return (
     <div id='contact' className="w-screen bg-gradient-to-b from-amber-300 to-amber-500 px-4 py-16 md:px-10 lg:px-20 flex flex-col items-center justify-center">
       <div className="max-w-3xl mx-auto text-center">
@@ -15,8 +16,8 @@ const ContactInfo = () => {
           <div className="bg-white rounded-lg p-6 shadow-lg">
             <p className="text-lg md:text-xl lg:text-2xl font-semibold text-gray-800 mb-4">Email</p>
             <p className="text-lg md:text-xl lg:text-2xl text-amber-600">
-              <a href="mailto:info@mrwhiskers.io" target="_blank" rel="noopener noreferrer" className="break-words">
-                gotravelot@gmail.com
+              <a href={email} target="_blank" rel="noopener noreferrer" className="break-words">
+                {email}
               </a>
             </p>
           </div>
@@ -25,7 +26,7 @@ const ContactInfo = () => {
             <p className="text-lg md:text-xl lg:text-2xl font-semibold text-gray-800 mb-4">Phone</p>
             <p className="text-lg md:text-xl lg:text-2xl text-amber-600">
               <a href="tel:+1234567890" target="_blank" rel="noopener noreferrer">
-                +8801 999 999 999
+                {phone}
               </a>
             </p>
           </div>
@@ -33,7 +34,7 @@ const ContactInfo = () => {
           <div className="bg-white rounded-lg p-6 shadow-lg">
             <p className="text-lg md:text-xl lg:text-2xl font-semibold text-gray-800 mb-4">Address</p>
             <p className="text-lg md:text-xl lg:text-2xl text-amber-600">
-              1234 Some Street, Some City, Some Country
+              {address}
             </p>
           </div>
         </div>
