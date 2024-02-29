@@ -10,6 +10,7 @@ import Link from "next/link";
 import GoogleSignInButton from "../GoogleSignInButton";
 import { signIn } from "next-auth/react";
 import { useRouter } from "next/navigation";
+import { useToast } from "../ui/use-toast";
 
 const FormSchema = z.object({
     email: z.string().min(1,'Email is required').email('Invalid email'),
@@ -21,6 +22,7 @@ const FormSchema = z.object({
 
 const SignInForm = () => {
   const router = useRouter();
+  const { toast } = useToast();
     const form = useForm<z.infer<typeof FormSchema>>({
         resolver: zodResolver(FormSchema),
         defaultValues:{
@@ -36,10 +38,15 @@ const onSubmit= async (values:z.infer<typeof FormSchema>)=>{
       redirect: false,
     });
     if(signInData?.error){
-      console.log(signInData.error);
+      toast({
+        title: "Error",
+        description: "Something Went Wrong!",
+        variant: "destructive",
+      })
     }
     else{
-      router.push('#');
+      router.refresh();
+      router.push('/admin');
     }
 };
 
@@ -75,11 +82,9 @@ const onSubmit= async (values:z.infer<typeof FormSchema>)=>{
             )}
             />
         </div>
-          <Link href="/">
         <Button className="w-full mt-6" type="submit">
             Sign In
           </Button>
-          </Link>
       </form>
       <div className="mx-auto my-4 flex w-full items-center justify-evenly
       before:mr-4 before:block before:h-px before:flex-grow before:bg-stone-400
@@ -88,7 +93,7 @@ const onSubmit= async (values:z.infer<typeof FormSchema>)=>{
       </div>
       <GoogleSignInButton>Sign in with Google</GoogleSignInButton>
       <p className="text-center text-sm text-gray-600 mt-2">
-        If you don't have an account, please create an account
+        If you don&apos;t have an account, please create an account
         <Link className="text-blue-500 hover:underline before:mr-1" href='/sign-up'>Sign Up</Link>
       </p>
     </Form>
