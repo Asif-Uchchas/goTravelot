@@ -45,7 +45,7 @@ interface CheckboxState {
           <Button variant="outline" className="mr-4">{props.name}</Button>
         </DropdownMenuTrigger>
         <DropdownMenuContent className="w-1/4">
-          <DropdownMenuLabel>Appearance</DropdownMenuLabel>
+          <DropdownMenuLabel>Options</DropdownMenuLabel>
           <DropdownMenuSeparator />
           {props.tags.map((tagObj) => (
             <DropdownMenuCheckboxItem
