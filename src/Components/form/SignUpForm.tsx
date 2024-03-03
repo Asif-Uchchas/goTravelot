@@ -129,12 +129,7 @@ const SignUpForm = () => {
             )}
           />
         </div>
-
-        <CustomButton
-          title="Sign Up"
-          btnType="submit"
-          containerStyles="w-full mt-6"
-        />
+        <Button className="w-full mt-6" type="submit">Sign Up</Button>
       </form>
       <div
         className="mx-auto my-4 flex w-full items-center justify-evenly

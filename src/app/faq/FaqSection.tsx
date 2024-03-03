@@ -18,7 +18,7 @@ const FaqSection = () => {
           Frequently Asked Questions
         </p>
         <div className="flex flex-col gap-4" onClick={() => handleOpen()}>
-          <div className="bg-white rounded-lg p-6 shadow-lg">
+          <div className="bg-white rounded-lg p-6 shadow-lg cursor-pointer hover:shadow-slate-700">
             <p className="text-lg md:text-xl lg:text-2xl font-semibold text-gray-800 mb-4">
               How do I book a hotel? <span className=" ml-5">👇</span>
             </p>
@@ -44,7 +44,7 @@ const FaqSection = () => {
               </>
             )}
           </div>
-          <div className="bg-white rounded-lg p-6 shadow-lg">
+          <div className="bg-white rounded-lg p-6 shadow-lg cursor-pointer hover:shadow-slate-700">
             <p className="text-lg md:text-xl lg:text-2xl font-semibold text-gray-800 mb-4">
               What payment methods do you accept? <span className=" ml-5">👇</span>
             </p>
@@ -57,7 +57,7 @@ const FaqSection = () => {
               </>
               )}
           </div>
-          <div className="bg-white rounded-lg p-6 shadow-lg">
+          <div className="bg-white rounded-lg p-6 shadow-lg cursor-pointer hover:shadow-slate-700">
             <p className="text-lg md:text-xl lg:text-2xl font-semibold text-gray-800 mb-4">
               Can I cancel or change my booking? <span className=" ml-5">👇</span>
             </p>
@@ -70,7 +70,7 @@ const FaqSection = () => {
               </>
             )}
           </div>
-          <div className="bg-white rounded-lg p-6 shadow-lg">
+          <div className="bg-white rounded-lg p-6 shadow-lg cursor-pointer hover:shadow-slate-700">
             <p className="text-lg md:text-xl lg:text-2xl font-semibold text-gray-800 mb-4">
               Do I need to create an account to book? <span className=" ml-5">👇</span>
             </p>

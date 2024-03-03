@@ -1,16 +1,22 @@
-"use client";
+// "use client";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 import CustomButton from "./CustomButton";
 import DropdownButton from "./DropdownButton";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+import { getServerSession } from "next-auth";
+import { authOptions } from "@/lib/auth";
+import { Button, buttonVariants } from "./ui/button";
+import { signOut } from "next-auth/react";
+import UserAccountNav from "./UserAccountNav";
 
-const Navbar = () => {
-  const [nav, setNav] = useState(false);
-  const handleNav = () => {
-    setNav(!nav);
-  };
+const Navbar = async () => {
+  const session = await getServerSession(authOptions);
+  // const [nav, setNav] = useState(false);
+  // const handleNav = () => {
+  //   setNav(!nav);
+  // };
 
   return (
     <header className="w-full fixed top-0 z-10 bg-gradient-to-b from-amber-300 from-25%">
@@ -47,20 +53,27 @@ const Navbar = () => {
             <Link href="/faq">
               <CustomButton title="FAQ" containerStyles="nav-button" />
             </Link>
-            <Link href="/sign-in">
+            {/* <Link href="/sign-in">
               <CustomButton title="Sign In" containerStyles="nav-button" />
-            </Link>
+            </Link> */}
+            {session?.user ? (
+               <UserAccountNav />
+            ):(
+              <Link className={buttonVariants()} href="/sign-in">
+                Sign In
+              </Link>
+            )}
 
             <DropdownButton />
           </ul>
-          <div className="md:hidden">
+          {/* <div className="md:hidden">
           <div onClick={handleNav}>
             <AiOutlineMenu size={25} />
           </div>
-        </div>
+        </div> */}
         </div>
 
-          <div className={nav ? "md:hidden fixed left-0 top-0 w-full h-screen bg-black/70" : "hidden"}>
+          {/* <div className={nav ? "md:hidden fixed left-0 top-0 w-full h-screen bg-black/70" : "hidden"}>
           <div
             className={
               nav
@@ -116,7 +129,7 @@ const Navbar = () => {
               </ul>
             </div>
           </div>
-        </div>
+        </div> */}
       </nav>
     </header>
   );
