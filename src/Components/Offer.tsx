@@ -5,7 +5,7 @@ import LocationSetter from './LocationSetter'
 
 const Offer = () => {
   return (
-    <div className="w-screen h-auto  items-center justify-center p-10 ">    
+    <div id='offers' className="w-screen h-auto  items-center justify-center p-10 " >    
       <div className=" flex relative flex-col  space-y-4">
         <p className=" text-2xl font-semibold md:text-3xl lg:text-4xl">
             Offers
@@ -28,7 +28,7 @@ const Offer = () => {
                 The best place to find the best travel deals
               </p>
           <p className=" text-white text-sm md:text-lg lg:text-xl drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] ml-4	">Yelinberg</p>
-          <button className="bg-sky-900 text-white p-4 rounded-md hover:bg-sky-950 shadow-md w-24 ml-4">Search</button>
+          <button className="bg-sky-900 text-white p-4 rounded-md hover:bg-sky-950 shadow-md w-24 ml-4">Go to</button>
                             
         </div>
         

@@ -1,95 +1,104 @@
 "use client";
 import React, { useState } from "react";
-import SearchTag from "./SearchTags";
+import SearchTags from "./SearchTags";
 import SearchCard from "./SearchCards";
+import { DropdownMenuCheckboxes } from "./TagDropdown";
 
-interface Project {
+interface Hotel {
   id: number;
   name: string;
   image: string;
   tag: string[];
 }
 
-const projectsData: Project[] = [
+const hotelData: Hotel[] = [
   {
     id: 1,
-    name: "Yelinberg",
+    name: "Yelinberg1",
     image: "../rec.jpg",
-    tag: ["All", "Web"],
+    tag: ["All", "Yelinberg"],
   },
   {
     id: 2,
-    name: "Yelinberg",
+    name: "Yelinberg2",
     image: "../rec.jpg",
-    tag: ["All", "Web"],
+    tag: ["All", "Dhaka"],
   },
   {
     id: 3,
-    name: "Yelinberg",
+    name: "Yelinberg3",
     image: "../rec.jpg",
-    tag: ["All", "Web"],
+    tag: ["All", "Coastland"],
   },
   {
     id: 4,
-    name: "Yelinberg",
+    name: "Yelinberg4",
     image: "../rec.jpg",
-    tag: ["All", "Web"],
+    tag: ["All", "Yelinberg"],
   },
- 
+  {
+    id: 5,
+    name: "Yelinberg4",
+    image: "../rec.jpg",
+    tag: ["All", "Yelinberg"],
+  },
+  {
+    id: 6,
+    name: "Yelinberg3",
+    image: "../rec.jpg",
+    tag: ["All", "Coastland"],
+  },
 ];
 
-const ProjectsSection: React.FC = () => {
+const SearchResults: React.FC = () => {
+  const tags = [
+    { name: 'All' },
+    { name: 'Yelinberg' },
+    { name: 'Dhaka' },
+    { name: 'Coastland' },
+    { name: 'Coand' },
+  ];
+
   const [tag, setTag] = useState<string>("All");
 
-  const filteredProjects = projectsData.filter((project) =>
+  const filteredProjects = hotelData.filter((project) =>
     project.tag.includes(tag)
   );
-
   const handleTagChange = (newTag: string) => {
     setTag(newTag);
   };
 
   return (
-    <section id="projects">
-      <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">
-        My Projects
-      </h2>
-      <div className="flex flex-row justify-center items-center gap-2 text-white my-6">
-        <ProjectTag
-          name="All"
-          onClick={handleTagChange}
-          isSelected={tag === "All"}
-        />
-        <ProjectTag
-          name="Web"
-          onClick={handleTagChange}
-          isSelected={tag === "Web"}
-        />
-        <ProjectTag
-          name="Mobile"
-          onClick={handleTagChange}
-          isSelected={tag === "Mobile"}
-        />
-        <ProjectTag
-          name="UI/UX designs"
-          onClick={handleTagChange}
-          isSelected={tag === "Mobile"}
-        />
+    <div  className="w-screen h-auto  items-center justify-center p-10 " >    
+       <div className=" flex relative flex-col  space-y-4">
+            <p className=" text-2xl font-semibold md:text-3xl lg:text-4xl">
+                Search Results
+            </p>
+
+            <div className="flex" >
+                <p className=" text-lg font-semibold md:text-xl lg:text-2xl mr-2 row-span-3">Filters: </p>
+                <div className="grid grid-cols-2 md:grid-cols-1 lg:grid-cols-9 gap-2">
+                  <DropdownMenuCheckboxes tags={tags} onTagChange={handleTagChange} name="Location" />
+                  <DropdownMenuCheckboxes tags={tags} onTagChange={handleTagChange} name="Location"/>
+                  <DropdownMenuCheckboxes tags={tags} onTagChange={handleTagChange} name="Location" />
+                  <DropdownMenuCheckboxes tags={tags} onTagChange={handleTagChange} name="Location"/>
+                </div>
+            </div>
+
       </div>
-      <div className="grid md:grid-cols-3 gap-8 md:gap-12">
-        {filteredProjects.map((project, index) => (
-          <ProjectCard
-            key={project.id}
-            title={project.title}
-            description={project.description}
-            imgUrl={project.image}
-            gitUrl={project.gitUrl}
-            previewUrl="/"
-          />
-        ))}
+       <div className="flex">
+
+      {/* Right: Product Cards */}
+      <div className="w-screen">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  gap-4">
+        {filteredProjects.map((hotel) => (
+                <SearchCard key={hotel.id} name={hotel.name} imgUrl={hotel.image} />
+                ))}
+        </div>
       </div>
-    </section>
+     </div>
+    </div>
   );
 };
 
-export default ProjectsSection;
+export default SearchResults;

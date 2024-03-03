@@ -9,3 +9,9 @@ export interface CustomButtonProps {
     rightIcon?: string;
     isDisabled?: boolean;  
 }
+
+export interface ContactInfoProps{
+    address: string;
+    phone: string;
+    email: string;
+}

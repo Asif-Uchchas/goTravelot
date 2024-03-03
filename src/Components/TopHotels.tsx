@@ -50,7 +50,7 @@ const TopHotels = () => {
   ];
 
   return (
-    <div className="w-screen items-center justify-center p-10">
+    <div className="w-screen items-center justify-center p-10" id="hotels">
       
       <div className="pt-5">
         <p className="text-2xl font-semibold md:text-3xl lg:text-4xl">
