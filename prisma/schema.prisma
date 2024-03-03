@@ -17,4 +17,36 @@ model User{
   password String
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
+  image String?
+
+  reservations Reservation[]
+
+}
+
+model Reservation {
+  id Int @id @default(autoincrement())
+  userId Int  
+  startDate DateTime
+  endDate DateTime
+  hotelId Int
+  totalPrice Int
+  createdAt DateTime @default(now())
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+  hotel  Hotel @relation(fields: [hotelId], references: [id], onDelete: Cascade)
+}
+
+model Hotel {
+  id Int @id @default(autoincrement())
+  name String
+  description String
+  hotelImage  String?
+  tag Tag[]
+  reservations Reservation[]
+}
+
+model Tag {
+  id Int @id @default(autoincrement())
+  title String
+  tagType String
+  hotels Hotel[]
 }

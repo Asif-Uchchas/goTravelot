@@ -1,8 +1,10 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import { useRouter } from 'next/navigation'
 import React from 'react'
 
 const Footer = () => {
+
   return (
     <footer className="flex flex-col mt-5 bg-[#4D90AB]">
       <div className="flex max-md:flex-col flex-wrap justify-between gap-5 sm:px-16 px-6 py-10 ">
@@ -32,6 +34,7 @@ const Footer = () => {
           </Link>
         </div>
       </div>
+
     </footer>
   )
 }
