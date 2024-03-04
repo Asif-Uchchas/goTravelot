@@ -38,7 +38,7 @@ const Hero = () => {
       
         </div>
         <div className=" flex items-center justify-center ">
-          <LocationSetter/>
+          <LocationSetter searchParams={{location:""}}/>
         </div>
         <div className=" flex items-center justify-center  relative">
           <Offer/>

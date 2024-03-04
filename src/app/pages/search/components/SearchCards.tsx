@@ -4,14 +4,23 @@ import Link from "next/link";
 import Image from "next/image";
 
 interface SearchCardProps {
+  id: number;
   imgUrl: string;
   name: string;
-  
+  description:string;
+  reviewCount:number;
+  rating:number;
+  tag: string[];
 }
 
 const SearchCard: React.FC<SearchCardProps> = ({
+  id,
   imgUrl,
   name,
+  description,
+  reviewCount,
+  rating,
+  tag,
 }) => {
   return (
     <div className="m-2">
@@ -24,8 +33,9 @@ const SearchCard: React.FC<SearchCardProps> = ({
         </div>
 
         <div>
-          <p>Ratings-*****</p>
-          <p>Description</p>
+          <p>Ratings-{rating}</p>
+          <p>Reviews-{reviewCount}</p>
+          {/* <p>Description-{description}</p> */}
         </div>
 
 
