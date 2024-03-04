@@ -5,7 +5,7 @@ import SearchResults from './SearchResults'
 import SearchCard from './SearchCards'
 import SearchTag from './SearchTags'
 
-function Main() {
+function Main({searchParams}:{searchParams:{location:string|undefined}}) {
   return (
     <div className="w-screen  items-center justify-center ">    
     <div className="flex justify-center items-center bg-slate-400 rounded-md">
@@ -21,7 +21,7 @@ function Main() {
     
   </div>
   <div className=" flex items-center justify-center ">
-          <LocationSetter/>
+          <LocationSetter searchParams={{location:""}}/>
     </div>
   <div className=" flex items-center justify-center ">
     <SearchResults/>
