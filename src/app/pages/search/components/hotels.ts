@@ -8,7 +8,7 @@ interface Hotel {
     tag: string[];
 }
   
-const hotelData: Hotel[] = [
+ export const hotelInfo: Hotel[] = [
     {
       id: 1,
       name: "Hotel Linkway",
