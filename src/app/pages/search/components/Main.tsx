@@ -1,34 +1,33 @@
-"use client "
-import LocationSetter from '@/Components/LocationSetter'
-import React from 'react'
-import SearchResults from './SearchResults'
-import SearchCard from './SearchCards'
-import SearchTag from './SearchTags'
+import React from 'react';
+import LocationSetter from '@/Components/LocationSetter';
+import SearchResults from './SearchResults';
+import SearchCard from './SearchCards';
 
-function Main({searchParams}:{searchParams:{location:string|undefined}}) {
+function Main({ searchParams }: { searchParams: { location: string | undefined } }) {
   return (
-    <div className="w-screen  items-center justify-center ">    
-    <div className="flex justify-center items-center bg-slate-400 rounded-md">
-    <div className="overflow-hidden w-screen h-60 rounded-md relative">
-      <img
-        className="object-cover w-screen h-screen rounded-md"
-        src="../rec.jpg"
-        alt="Partial Image"
-      />
-        
+    <div className="min-h-screen bg-gray-100 flex flex-col items-center justify-center">
+      {/* Hero Section */}
+      <div className="bg-gray-900 w-full h-60 md:h-96 flex items-center justify-center">
+        <div className="relative w-full h-full">
+          <img
+            className="object-cover w-full h-full rounded-md"
+            src="../rec.jpg"
+            alt="Partial Image"
+          />
+        </div>
+      </div>
+
+      {/* Location Setter */}
+      <div className="mt-8">
+        <LocationSetter searchParams={{ location: '' }} />
+      </div>
+
+      {/* Search Results */}
+      <div className="mt-8 flex flex-col items-center justify-center">
+        <SearchResults />
+      </div>
     </div>
-    
-    
-  </div>
-  <div className=" flex items-center justify-center ">
-          <LocationSetter searchParams={{location:""}}/>
-    </div>
-  <div className=" flex items-center justify-center ">
-    <SearchResults/>
-  </div>
-    
-  </div>
-  )
+  );
 }
 
-export default Main
+export default Main;
