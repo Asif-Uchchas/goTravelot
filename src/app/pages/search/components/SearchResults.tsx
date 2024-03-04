@@ -16,7 +16,7 @@ const SearchResults: React.FC = () => {
     { name: "All" },
     { name: "Yelinberg" },
     { name: "Dhaka" },
-    { name: "Coastland" },
+    { name: "Mumbai" },
     { name: "Coand" },
   ];
   const roomtags = [
@@ -78,9 +78,9 @@ const SearchResults: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col items-center">
+      <div className="flex flex-col items-center justify-center">
         {/* Right: Product Cards */}
-        <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 pl-10 ">
           {filteredProjects.slice(0, showCount).map((hotel) => (
             <SearchCard
               key={hotel.id}
