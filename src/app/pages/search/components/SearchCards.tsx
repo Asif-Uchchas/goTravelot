@@ -64,7 +64,7 @@ const SearchCard: React.FC<SearchCardProps> = ({
 
   return (
     <div className="m-2">
-      <Link href={`/hotel/${id}`}>
+      <Link href={`hotels/${id}`}>
         <div className="w-80 h-36 md:h-72 md:w-96 rounded relative group overflow-hidden transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105 shadow-lg">
           <div
             className="w-full h-full rounded bg-center bg-cover relative"
