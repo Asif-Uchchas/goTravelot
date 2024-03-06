@@ -24,10 +24,17 @@ export default function LocationSetter({searchParams}:{searchParams:{location:st
     router.push(`/pages/search?location=${encodeURIComponent(location)}`);
   };
 
+  const handleKeyDown = (event: { key: string; }) => {
+    if (event.key === 'Enter') {
+      handleSearch();
+    }
+  };
+
   return (
     <div className="flex flex-col md:flex-row w-[1300px]">
       <div className='bg-yellow-500 flex  md:flex-row items-center justify-center p-2 border-yellow-600 rounded-md shadow-md w-full'>
-        <input  type="text" className="p-3 mb-1 mr-1 md:mr-1 md:mb-0 border border-gray-300 rounded-md shadow-md w-full " placeholder="Where are you going?" value={location} onChange={(e) => setLocation(e.target.value)} />
+        <input type="text" className="p-3 mb-1 mr-1 md:mr-1 md:mb-0 border border-gray-300 rounded-md shadow-md w-full " placeholder="Where are you going?" value={location} onChange={(e) => setLocation(e.target.value)}
+  onKeyDown={handleKeyDown}/>
         {/* <div className="flex flex-col md:flex-row w-full">
           <DatePicker
             selected={checkInDate}
