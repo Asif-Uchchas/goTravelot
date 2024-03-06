@@ -6,15 +6,6 @@ interface Hotel {
     rating: number;
     image: string;
     tag: string[];
-    location: string;
-    distance: string;
-    sustainability: string;
-    propertyFeatures: string;
-    roomType: string;
-    originalPrice: string;
-    currentPrice: string;
-    taxesAndCharges: string;
-    prepayment: string;
   }
     
    export const hotelInfo: Hotel[] = [
@@ -247,4 +238,4 @@ interface Hotel {
         tag: ["All", "Mumbai", "4"],
     }
     
-    ];
+];
