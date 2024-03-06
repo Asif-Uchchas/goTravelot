@@ -2,15 +2,24 @@
 import React, { useEffect, useState } from "react";
 import SearchCard from "./SearchCards";
 import { DropdownMenuCheckboxes } from "./TagDropdown";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { MdExpandMore } from "react-icons/md";
 import { hotelInfo } from "./hotels";
+
 
 
 const hotelData = hotelInfo
 
 const SearchResults: React.FC = () => {
   const router = useRouter();
+  
+  const searchParams = useSearchParams();
+  const params = new URLSearchParams(searchParams);
+
+  console.log(params.get('location'))
+
+  const searchLocations=params.get('location')
+
 
   const tags = [
     { name: "All" },
@@ -31,8 +40,14 @@ const SearchResults: React.FC = () => {
   const [tag, setTag] = useState<string>("All");
   const [location, setLocation] = useState<string>("");
 
+  useEffect(() => {
+    // Set tag based on searchLocations
+    setTag(searchLocations ? searchLocations : "All");
+  }, [searchLocations]); // Run the effect when searchLocations changes
+
   const [showCount, setShowCount] = useState<number>(8); // Number of hotels to show initially
   const filteredProjects = hotelData.filter((project) =>
+     
     project.tag.includes(tag)
   );
   const handleTagChange = (newTag: string) => {
@@ -55,16 +70,6 @@ const SearchResults: React.FC = () => {
             Filters:{" "}
           </p>
           <div className="grid grid-cols-2 md:grid-cols-1 lg:grid-cols-9 gap-2">
-            <DropdownMenuCheckboxes
-              tags={tags}
-              onTagChange={handleTagChange}
-              name="Location"
-            />
-            <DropdownMenuCheckboxes
-              tags={tags}
-              onTagChange={handleTagChange}
-              name="Location"
-            />
             <DropdownMenuCheckboxes
               tags={tags}
               onTagChange={handleTagChange}
