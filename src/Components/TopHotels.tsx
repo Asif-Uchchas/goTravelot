@@ -3,9 +3,12 @@ import React from "react";
 import "swiper/css";
 import ResponsiveComponentSwitcher from "./ResponsiveComponentSwitcher";
 import { hotelInfo } from "@/app/pages/search/components/hotels";
+import Link from "next/link";
+
 
 const TopHotels = () => {
   const hotels = hotelInfo.filter((hotel) => hotel.rating >= 8);
+
 
   return (
     <div className="w-screen items-center justify-center p-10" id="hotels">
@@ -20,7 +23,8 @@ const TopHotels = () => {
             key={hotel.id}
             className="relative space-y-1 shrink-0 cursor-pointer justify content"
           >
-            <a href={hotel.image} className="block relative">
+            <Link href={`pages/hotels/${hotel.id}`}
+              className="block relative">
               <img
                 className="w-80 h-72 object-cover rounded-lg pb-2"
                 src={hotel.image}
@@ -48,7 +52,7 @@ const TopHotels = () => {
                   </div>
                 }
               />
-            </a>
+            </Link>
           </div>
         ))}
       </div>
