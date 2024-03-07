@@ -26,7 +26,9 @@ const SearchResults: React.FC = () => {
     { name: "Yelinberg" },
     { name: "Dhaka" },
     { name: "Mumbai" },
-    { name: "New York" }
+    { name: "New York" },
+    { name: "Paris" },
+    { name: "Hawaii" }
   ];
   const roomtags = [
     { name: "All" },
