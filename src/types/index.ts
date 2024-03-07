@@ -15,3 +15,23 @@ export interface ContactInfoProps{
     phone: string;
     email: string;
 }
+
+export interface Hotel {
+    id: number;
+    description: string;
+    name: string;
+    reviewCount: number;
+    rating: number;
+    image: string;
+    tag: string[];
+    location: string;
+    placeImg: string;
+    distance: string;
+    sustainability: string;
+    propertyFeatures: string;
+    roomType: string;
+    originalPrice: string;
+    currentPrice: string;
+    taxesAndCharges: string;
+    prepayment: string;
+  }

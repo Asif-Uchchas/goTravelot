@@ -7,6 +7,7 @@ interface Hotel {
   image: string;
   tag: string[];
   location: string;
+  placeImg: string
   distance: string;
   sustainability: string;
   propertyFeatures: string;
@@ -35,7 +36,8 @@ export const hotelInfo: Hotel[] = [
     originalPrice: "83 USD",
     currentPrice: "62 USD",
     taxesAndCharges: "Includes taxes and charges",
-    prepayment: "Free cancellation, No prepayment needed"
+    prepayment: "Free cancellation, No prepayment needed",
+    placeImg: "https://lh3.googleusercontent.com/p/AF1QipMToRxg6fSdlZnoKL4ia41erUvEI_XPhm4Bd-NX=s680-w680-h510",
   },
   {
     id: 9130663,
@@ -53,7 +55,8 @@ export const hotelInfo: Hotel[] = [
     originalPrice: "92 USD",
     currentPrice: "43 USD",
     taxesAndCharges: "Includes taxes and charges",
-    prepayment: "Free cancellation, No prepayment needed"
+    prepayment: "Free cancellation, No prepayment needed",
+    placeImg: "https://lh3.googleusercontent.com/p/AF1QipMToRxg6fSdlZnoKL4ia41erUvEI_XPhm4Bd-NX=s680-w680-h510",
   },
   {
     id: 582848,
@@ -71,7 +74,8 @@ export const hotelInfo: Hotel[] = [
     originalPrice: "76 USD",
     currentPrice: "43 USD",
     taxesAndCharges: "Includes taxes and charges",
-    prepayment: "Free cancellation, No prepayment needed"
+    prepayment: "Free cancellation, No prepayment needed",
+    placeImg: "https://lh3.googleusercontent.com/p/AF1QipMToRxg6fSdlZnoKL4ia41erUvEI_XPhm4Bd-NX=s680-w680-h510",
   },
   {
     id: 9670810,
@@ -89,7 +93,8 @@ export const hotelInfo: Hotel[] = [
     originalPrice: "44 USD",
     currentPrice: "33 USD",
     taxesAndCharges: "Includes taxes and charges",
-    prepayment: "Free cancellation, No prepayment needed"
+    prepayment: "Free cancellation, No prepayment needed",
+    placeImg: "https://lh3.googleusercontent.com/p/AF1QipMToRxg6fSdlZnoKL4ia41erUvEI_XPhm4Bd-NX=s680-w680-h510",
   },
   {
     id: 1794582,
@@ -107,7 +112,8 @@ export const hotelInfo: Hotel[] = [
     originalPrice: "46 USD",
     currentPrice: "45.54 USD",
     taxesAndCharges: "Includes taxes and charges",
-    prepayment: "Free cancellation, No prepayment needed"
+    prepayment: "Free cancellation, No prepayment needed",
+    placeImg: "https://lh3.googleusercontent.com/p/AF1QipMToRxg6fSdlZnoKL4ia41erUvEI_XPhm4Bd-NX=s680-w680-h510",
   },
   {
     id: 8965751,
@@ -125,7 +131,8 @@ export const hotelInfo: Hotel[] = [
     originalPrice: "40 USD",
     currentPrice: "36 USD",
     taxesAndCharges: "Includes taxes and charges",
-    prepayment: "Free cancellation, No prepayment needed"
+    prepayment: "Free cancellation, No prepayment needed",
+    placeImg: "https://lh3.googleusercontent.com/p/AF1QipMToRxg6fSdlZnoKL4ia41erUvEI_XPhm4Bd-NX=s680-w680-h510",
   },
   {
     id: 9299899,
@@ -143,7 +150,8 @@ export const hotelInfo: Hotel[] = [
     originalPrice: "34 USD",
     currentPrice: "31 USD",
     taxesAndCharges: "Includes taxes and charges",
-    prepayment: "Free cancellation, No prepayment needed"
+    prepayment: "Free cancellation, No prepayment needed",
+    placeImg: "https://lh3.googleusercontent.com/p/AF1QipMToRxg6fSdlZnoKL4ia41erUvEI_XPhm4Bd-NX=s680-w680-h510",
   },
 
   {
@@ -162,7 +170,8 @@ export const hotelInfo: Hotel[] = [
     originalPrice: "56 USD",
     currentPrice: "32 USD",
     taxesAndCharges: "Includes taxes and charges",
-    prepayment: "Free cancellation, No prepayment needed"
+    prepayment: "Free cancellation, No prepayment needed",
+    placeImg: "https://lh3.googleusercontent.com/p/AF1QipMToRxg6fSdlZnoKL4ia41erUvEI_XPhm4Bd-NX=s680-w680-h510",
   },
   {
     id: 469851,
@@ -180,7 +189,8 @@ export const hotelInfo: Hotel[] = [
     originalPrice: "70 USD",
     currentPrice: "38 USD",
     taxesAndCharges: "Includes taxes and charges",
-    prepayment: "Free cancellation, No prepayment needed"
+    prepayment: "Free cancellation, No prepayment needed",
+    placeImg: "https://lh3.googleusercontent.com/p/AF1QipMToRxg6fSdlZnoKL4ia41erUvEI_XPhm4Bd-NX=s680-w680-h510",
   },
   {
     id: 621624,
@@ -198,7 +208,8 @@ export const hotelInfo: Hotel[] = [
     originalPrice: "158 USD",
     currentPrice: "90 USD",
     taxesAndCharges: "Includes taxes and charges",
-    prepayment: "Free cancellation, No prepayment needed"
+    prepayment: "Free cancellation, No prepayment needed",
+    placeImg: "https://lh3.googleusercontent.com/p/AF1QipMToRxg6fSdlZnoKL4ia41erUvEI_XPhm4Bd-NX=s680-w680-h510",
   },
   {
     id: 11309706,
@@ -216,7 +227,8 @@ export const hotelInfo: Hotel[] = [
     originalPrice: "24 USD",
     currentPrice: "21 USD",
     taxesAndCharges: "Includes taxes and charges",
-    prepayment: "Free cancellation, No prepayment needed"
+    prepayment: "Free cancellation, No prepayment needed",
+    placeImg: "https://lh3.googleusercontent.com/p/AF1QipMToRxg6fSdlZnoKL4ia41erUvEI_XPhm4Bd-NX=s680-w680-h510",
   },
   {
     id: 6664048,
@@ -234,7 +246,8 @@ export const hotelInfo: Hotel[] = [
     originalPrice: "145 USD",
     currentPrice: "35 USD",
     taxesAndCharges: "Includes taxes and charges",
-    prepayment: "Free cancellation, No prepayment needed"
+    prepayment: "Free cancellation, No prepayment needed",
+    placeImg: "https://lh3.googleusercontent.com/p/AF1QipMToRxg6fSdlZnoKL4ia41erUvEI_XPhm4Bd-NX=s680-w680-h510",
   },
   {
     id: 6044188,
@@ -253,6 +266,7 @@ export const hotelInfo: Hotel[] = [
     prepayment: "No prepayment needed",
     originalPrice: "19 USD",
     currentPrice: "17 USD",
+    placeImg: "https://lh3.googleusercontent.com/p/AF1QipMToRxg6fSdlZnoKL4ia41erUvEI_XPhm4Bd-NX=s680-w680-h510",
   },
 
   {
@@ -272,6 +286,7 @@ export const hotelInfo: Hotel[] = [
     prepayment: "Free cancellation, No prepayment needed",
     originalPrice: "21 USD",
     currentPrice: "19 USD",
+    placeImg: "https://lh3.googleusercontent.com/p/AF1QipMToRxg6fSdlZnoKL4ia41erUvEI_XPhm4Bd-NX=s680-w680-h510",
   },
   {
     id: 1757950,
@@ -290,6 +305,7 @@ export const hotelInfo: Hotel[] = [
     prepayment: "Free cancellation, No prepayment needed",
 originalPrice: "17 USD",
     currentPrice: "16 USD",
+    placeImg: "https://lh3.googleusercontent.com/p/AF1QipMToRxg6fSdlZnoKL4ia41erUvEI_XPhm4Bd-NX=s680-w680-h510",
   },
   {
     id: 7960061,
@@ -307,7 +323,8 @@ originalPrice: "17 USD",
     originalPrice: "19 USD",
     currentPrice: "17 USD",
     taxesAndCharges: "Includes taxes and charges",
-    prepayment: "Free cancellation, No prepayment needed"
+    prepayment: "Free cancellation, No prepayment needed",
+    placeImg: "https://lh3.googleusercontent.com/p/AF1QipMToRxg6fSdlZnoKL4ia41erUvEI_XPhm4Bd-NX=s680-w680-h510",
   },
   {
     id: 8616561,
@@ -325,7 +342,8 @@ originalPrice: "17 USD",
     originalPrice: "12 USD",
     currentPrice: "11 USD",
     taxesAndCharges: "Includes taxes and charges",
-    prepayment: "No prepayment needed"
+    prepayment: "No prepayment needed",
+    placeImg: "https://lh3.googleusercontent.com/p/AF1QipMToRxg6fSdlZnoKL4ia41erUvEI_XPhm4Bd-NX=s680-w680-h510",
   },
   {
     id: 659278,
@@ -343,7 +361,8 @@ originalPrice: "17 USD",
     originalPrice: "150 USD",
     currentPrice: "119 USD",
     taxesAndCharges: "Includes taxes and charges",
-    prepayment: "Free cancellation, No prepayment needed"
+    prepayment: "Free cancellation, No prepayment needed",
+    placeImg: "https://lh3.googleusercontent.com/p/AF1QipMToRxg6fSdlZnoKL4ia41erUvEI_XPhm4Bd-NX=s680-w680-h510",
   },
 
   {
@@ -362,7 +381,8 @@ originalPrice: "17 USD",
     originalPrice: "239 USD",
     currentPrice: "179 USD",
     taxesAndCharges: "Includes taxes and charges",
-    prepayment: "Free cancellation, No prepayment needed"
+    prepayment: "Free cancellation, No prepayment needed",
+    placeImg: "https://lh3.googleusercontent.com/p/AF1QipMToRxg6fSdlZnoKL4ia41erUvEI_XPhm4Bd-NX=s680-w680-h510",
   },
   {
     id: 10833831,
@@ -380,7 +400,8 @@ originalPrice: "17 USD",
     originalPrice: "19 USD",
     currentPrice: "15 USD",
     taxesAndCharges: "Includes taxes and charges",
-    prepayment: "Free cancellation, No prepayment needed"
+    prepayment: "Free cancellation, No prepayment needed",
+    placeImg: "https://lh3.googleusercontent.com/p/AF1QipMToRxg6fSdlZnoKL4ia41erUvEI_XPhm4Bd-NX=s680-w680-h510",
   },
 
   {
@@ -399,7 +420,8 @@ originalPrice: "17 USD",
     originalPrice: "547 USD",
     currentPrice: "473 USD",
     taxesAndCharges: "Includes taxes and charges",
-    prepayment: "No prepayment needed"
+    prepayment: "No prepayment needed",
+    placeImg: "https://media.timeout.com/images/105124812/750/422/image.jpg"
   },
   {
     id: 2012829,
@@ -417,7 +439,8 @@ originalPrice: "17 USD",
     originalPrice: "163 USD",
     currentPrice: "147 USD",
     taxesAndCharges: "Includes taxes and charges",
-    prepayment: "No prepayment needed"
+    prepayment: "No prepayment needed",
+    placeImg: "https://media.timeout.com/images/105124812/750/422/image.jpg"
   },
   {
     id: 2210104,
@@ -435,7 +458,8 @@ originalPrice: "17 USD",
     originalPrice: "163 USD",
     currentPrice: "163 USD",
     taxesAndCharges: "Includes taxes and charges",
-    prepayment: "No prepayment needed"
+    prepayment: "No prepayment needed",
+    placeImg: "https://media.timeout.com/images/105124812/750/422/image.jpg"
   },
   {
     id: 436827,
@@ -453,7 +477,8 @@ originalPrice: "17 USD",
     originalPrice: "150 USD",
     currentPrice: "150 USD",
     taxesAndCharges: "Includes taxes and charges",
-    prepayment: "No prepayment needed"
+    prepayment: "No prepayment needed",
+    placeImg: "https://media.timeout.com/images/105124812/750/422/image.jpg"
   },
   {
     id: 1106729,
@@ -471,7 +496,8 @@ originalPrice: "17 USD",
     originalPrice: "121 USD",
     currentPrice: "93 USD",
     taxesAndCharges: "Includes taxes and charges",
-    prepayment: ""
+    prepayment: "",
+    placeImg: "https://media.timeout.com/images/105124812/750/422/image.jpg"
   },
   {
     id: 8665027,
@@ -489,7 +515,8 @@ originalPrice: "17 USD",
     originalPrice: "164 USD",
     currentPrice: "148 USD",
     taxesAndCharges: "Includes taxes and charges",
-    prepayment: ""
+    prepayment: "",
+    placeImg: "https://media.timeout.com/images/105124812/750/422/image.jpg"
   },
 
   {
@@ -508,7 +535,8 @@ originalPrice: "17 USD",
     originalPrice: "442 USD",
     currentPrice: "402 USD",
     taxesAndCharges: "Includes taxes and charges",
-    prepayment: ""
+    prepayment: "",
+    placeImg: "https://media.timeout.com/images/105124812/750/422/image.jpg"
   },
   {
     id: 906253,
@@ -526,7 +554,8 @@ originalPrice: "17 USD",
     originalPrice: "199 USD",
     currentPrice: "199 USD",
     taxesAndCharges: "Includes taxes and charges",
-    prepayment: ""
+    prepayment: "",
+    placeImg: "https://media.timeout.com/images/105124812/750/422/image.jpg"
   },
   {
     id: 483674,
@@ -544,7 +573,8 @@ originalPrice: "17 USD",
     originalPrice: "199 USD",
     currentPrice: "199 USD",
     taxesAndCharges: "Includes taxes and charges",
-    prepayment: "No prepayment needed"
+    prepayment: "No prepayment needed",
+    placeImg: "https://media.timeout.com/images/105124812/750/422/image.jpg"
   },
   {
     id: 6162805,
@@ -562,7 +592,8 @@ originalPrice: "17 USD",
     originalPrice: "163 USD",
     currentPrice: "163 USD",
     taxesAndCharges: "Includes taxes and charges",
-    prepayment: "No prepayment needed"
+    prepayment: "No prepayment needed",
+    placeImg: "https://media.timeout.com/images/105124812/750/422/image.jpg"
   },
   {
     id: 599534,
@@ -580,7 +611,8 @@ originalPrice: "17 USD",
     originalPrice: "163 USD",
     currentPrice: "147 USD",
     taxesAndCharges: "Includes taxes and charges",
-    prepayment: "No prepayment needed"
+    prepayment: "No prepayment needed",
+    placeImg: "https://media.timeout.com/images/105124812/750/422/image.jpg"
   },
   {
     id: 617931,
@@ -598,9 +630,14 @@ originalPrice: "17 USD",
     originalPrice: "181 USD",
     currentPrice: "181 USD",
     taxesAndCharges: "Includes taxes and charges",
-    prepayment: "No prepayment needed"
+    prepayment: "No prepayment needed",
+    placeImg: "https://media.timeout.com/images/105124812/750/422/image.jpg"
   },
-  
+  //32
+  //Mumbai
+  //
+  //
+  //
   {
     id: 1,
     name: "Niranta Transit Hotel",
@@ -620,6 +657,7 @@ originalPrice: "17 USD",
     currentPrice: "458 AED",
     taxesAndCharges: "+82 AED taxes and charges",
     prepayment: "No prepayment needed",
+    placeImg: "https://cdn.britannica.com/79/188879-050-25E7733E/Gateway-of-India-Mumai-monument-2012.jpg",
   },
   {
     id: 8778629,
@@ -640,6 +678,7 @@ originalPrice: "17 USD",
     currentPrice: "256 AED",
     taxesAndCharges: "+31 AED taxes and charges",
     prepayment: "No prepayment needed",
+    placeImg: "https://cdn.britannica.com/79/188879-050-25E7733E/Gateway-of-India-Mumai-monument-2012.jpg",
   },
   {
     id: 1362336,
@@ -660,6 +699,7 @@ originalPrice: "17 USD",
     currentPrice: "159 AED",
     taxesAndCharges: "+17 AED taxes and charges",
     prepayment: "No prepayment needed",
+    placeImg: "https://cdn.britannica.com/79/188879-050-25E7733E/Gateway-of-India-Mumai-monument-2012.jpg",
   },
   {
     id: 10723872,
@@ -680,6 +720,7 @@ originalPrice: "17 USD",
     currentPrice: "112 AED",
     taxesAndCharges: "+12 AED taxes and charges",
     prepayment: "No prepayment needed",
+    placeImg: "https://cdn.britannica.com/79/188879-050-25E7733E/Gateway-of-India-Mumai-monument-2012.jpg",
   },
   {
     id: 1300736,
@@ -700,6 +741,7 @@ originalPrice: "17 USD",
     currentPrice: "680 AED",
     taxesAndCharges: "+104 AED taxes and charges",
     prepayment: "No prepayment needed",
+    placeImg: "https://cdn.britannica.com/79/188879-050-25E7733E/Gateway-of-India-Mumai-monument-2012.jpg",
   },
   {
     id: 249951,
@@ -720,6 +762,7 @@ originalPrice: "17 USD",
     currentPrice: "658 AED",
     taxesAndCharges: "+100 AED taxes and charges",
     prepayment: "No prepayment needed",
+    placeImg: "https://cdn.britannica.com/79/188879-050-25E7733E/Gateway-of-India-Mumai-monument-2012.jpg",
   },
   {
     id: 11308398,
@@ -740,6 +783,7 @@ originalPrice: "17 USD",
     currentPrice: "201 AED",
     taxesAndCharges: "+22 AED taxes and charges",
     prepayment: "No prepayment needed",
+    placeImg: "https://cdn.britannica.com/79/188879-050-25E7733E/Gateway-of-India-Mumai-monument-2012.jpg",
   },
   {
     id: 8154912,
@@ -760,6 +804,7 @@ originalPrice: "17 USD",
     currentPrice: "195 AED",
     taxesAndCharges: "+24 AED taxes and charges",
     prepayment: "No prepayment needed",
+    placeImg: "https://cdn.britannica.com/79/188879-050-25E7733E/Gateway-of-India-Mumai-monument-2012.jpg",
    },
   
    {
@@ -779,6 +824,7 @@ originalPrice: "17 USD",
     currentPrice: "575 AED",
     taxesAndCharges: "+104 AED taxes and charges",
     prepayment: "No prepayment needed",
+    placeImg: "https://cdn.britannica.com/79/188879-050-25E7733E/Gateway-of-India-Mumai-monument-2012.jpg",
   },
   {
     id: 9360612,
@@ -797,6 +843,7 @@ originalPrice: "17 USD",
     currentPrice: "465 AED",
     taxesAndCharges: "+84 AED taxes and charges",
     prepayment: "No prepayment needed",
+    placeImg: "https://cdn.britannica.com/79/188879-050-25E7733E/Gateway-of-India-Mumai-monument-2012.jpg",
   },
   {
     id: 1781955,
@@ -815,6 +862,7 @@ originalPrice: "17 USD",
     currentPrice: "458 AED",
     taxesAndCharges: "+82 AED taxes and charges",
     prepayment: "No prepayment needed",
+    placeImg: "https://cdn.britannica.com/79/188879-050-25E7733E/Gateway-of-India-Mumai-monument-2012.jpg",
   },
   {
     id: 1453101,
@@ -833,6 +881,7 @@ originalPrice: "17 USD",
     currentPrice: "458 AED",
     taxesAndCharges: "+82 AED taxes and charges",
     prepayment: "No prepayment needed",
+    placeImg: "https://cdn.britannica.com/79/188879-050-25E7733E/Gateway-of-India-Mumai-monument-2012.jpg",
   },
   {
     id: 3777484,
@@ -851,6 +900,7 @@ originalPrice: "17 USD",
     currentPrice: "439 AED",
     taxesAndCharges: "+101 AED taxes and charges",
     prepayment: "No prepayment needed",
+    placeImg: "https://cdn.britannica.com/79/188879-050-25E7733E/Gateway-of-India-Mumai-monument-2012.jpg",
   },
   {
     id: 401149,
@@ -869,6 +919,7 @@ originalPrice: "17 USD",
     currentPrice: "287 AED",
     taxesAndCharges: "+34 AED taxes and charges",
     prepayment: "No prepayment needed",
+    placeImg: "https://cdn.britannica.com/79/188879-050-25E7733E/Gateway-of-India-Mumai-monument-2012.jpg",
   },
   {
     id: 191605,
@@ -887,6 +938,7 @@ originalPrice: "17 USD",
     currentPrice: "430 AED",
     taxesAndCharges: "+77 AED taxes and charges",
     prepayment: "No prepayment needed",
+    placeImg: "https://cdn.britannica.com/79/188879-050-25E7733E/Gateway-of-India-Mumai-monument-2012.jpg",
   },
   {
     id: 283624,
@@ -905,6 +957,7 @@ originalPrice: "17 USD",
     currentPrice: "509 AED",
     taxesAndCharges: "+92 AED taxes and charges",
     prepayment: "No prepayment needed",
+    placeImg: "https://cdn.britannica.com/79/188879-050-25E7733E/Gateway-of-India-Mumai-monument-2012.jpg",
   },
   {
     id: 10869399,
@@ -923,6 +976,7 @@ originalPrice: "17 USD",
     currentPrice: "169 AED",
     taxesAndCharges: "+20 AED taxes and charges",
     prepayment: "No prepayment needed",
+    placeImg: "https://cdn.britannica.com/79/188879-050-25E7733E/Gateway-of-India-Mumai-monument-2012.jpg",
   },
   {
     id: 238999,
@@ -941,6 +995,7 @@ originalPrice: "17 USD",
     currentPrice: "465 AED",
     taxesAndCharges: "+84 AED taxes and charges",
     prepayment: "No prepayment needed",
+    placeImg: "https://cdn.britannica.com/79/188879-050-25E7733E/Gateway-of-India-Mumai-monument-2012.jpg",
   },
   {
     id: 11439321,
@@ -959,6 +1014,7 @@ originalPrice: "17 USD",
     currentPrice: "86 AED",
     taxesAndCharges: "+10 AED taxes and charges",
     prepayment: "No prepayment needed",
+    placeImg: "https://cdn.britannica.com/79/188879-050-25E7733E/Gateway-of-India-Mumai-monument-2012.jpg",
   },
   {
     id: 74722,
@@ -977,6 +1033,7 @@ originalPrice: "17 USD",
     currentPrice: "670 AED",
     taxesAndCharges: "+121 AED taxes and charges",
     prepayment: "No prepayment needed",
+    placeImg: "https://cdn.britannica.com/79/188879-050-25E7733E/Gateway-of-India-Mumai-monument-2012.jpg",
   },
   {
     id: 274997,
@@ -995,8 +1052,9 @@ originalPrice: "17 USD",
     currentPrice: "365 AED",
     taxesAndCharges: "+66 AED taxes and charges",
     prepayment: "No prepayment needed",
+    placeImg: "https://cdn.britannica.com/79/188879-050-25E7733E/Gateway-of-India-Mumai-monument-2012.jpg",
   },
-  
+  //53
   //Paris
   //
   //
@@ -1018,6 +1076,7 @@ originalPrice: "17 USD",
     "currentPrice": "297 USD",
     "taxesAndCharges": "+17 USD taxes and charges",
     prepayment: "No prepayment needed",
+    placeImg: "https://i0.wp.com/limitless-secrets.com/wp-content/uploads/2021/08/Best-Places-to-take-photos-with-the-Eiffel-Tower-Blog-Banner.png?fit=2240%2C1260&ssl=1"
   },
   {
     "id": 241318,
@@ -1036,6 +1095,8 @@ originalPrice: "17 USD",
     "currentPrice": "88 USD",
     "taxesAndCharges": "+11 USD taxes and charges",
     prepayment: "No prepayment needed",
+    placeImg: "https://i0.wp.com/limitless-secrets.com/wp-content/uploads/2021/08/Best-Places-to-take-photos-with-the-Eiffel-Tower-Blog-Banner.png?fit=2240%2C1260&ssl=1"
+
   },
   {
     "id": 8109029,
@@ -1054,6 +1115,7 @@ originalPrice: "17 USD",
     "currentPrice": "77 USD",
     "taxesAndCharges": "+11 USD taxes and charges",
     prepayment: "No prepayment needed",
+    placeImg: "https://i0.wp.com/limitless-secrets.com/wp-content/uploads/2021/08/Best-Places-to-take-photos-with-the-Eiffel-Tower-Blog-Banner.png?fit=2240%2C1260&ssl=1"
   },
   
   {
@@ -1073,6 +1135,7 @@ originalPrice: "17 USD",
     "currentPrice": "78 USD",
     "taxesAndCharges": "+11 USD taxes and charges",
     prepayment: "No prepayment needed",
+    placeImg: "https://i0.wp.com/limitless-secrets.com/wp-content/uploads/2021/08/Best-Places-to-take-photos-with-the-Eiffel-Tower-Blog-Banner.png?fit=2240%2C1260&ssl=1"
   },
   {
     "id": 51201,
@@ -1091,6 +1154,7 @@ originalPrice: "17 USD",
     "currentPrice": "74 USD",
     "taxesAndCharges": "+11 USD taxes and charges",
     prepayment: "No prepayment needed",
+    placeImg: "https://i0.wp.com/limitless-secrets.com/wp-content/uploads/2021/08/Best-Places-to-take-photos-with-the-Eiffel-Tower-Blog-Banner.png?fit=2240%2C1260&ssl=1"
   },
   {
     "id": 5698974,
@@ -1109,6 +1173,7 @@ originalPrice: "17 USD",
     "currentPrice": "76 USD",
     "taxesAndCharges": "+11 USD taxes and charges",
     prepayment: "No prepayment needed",
+    placeImg: "https://i0.wp.com/limitless-secrets.com/wp-content/uploads/2021/08/Best-Places-to-take-photos-with-the-Eiffel-Tower-Blog-Banner.png?fit=2240%2C1260&ssl=1"
   },
   {
     "id": 57033,
@@ -1127,6 +1192,7 @@ originalPrice: "17 USD",
     "currentPrice": "99 USD",
     "taxesAndCharges": "+26 USD taxes and charges",
     prepayment: "No prepayment needed",
+    placeImg: "https://i0.wp.com/limitless-secrets.com/wp-content/uploads/2021/08/Best-Places-to-take-photos-with-the-Eiffel-Tower-Blog-Banner.png?fit=2240%2C1260&ssl=1"
   },
   {
     "id": 250976,
@@ -1145,6 +1211,7 @@ originalPrice: "17 USD",
     "currentPrice": "118 USD",
     "taxesAndCharges": "+11 USD taxes and charges",
     prepayment: "No prepayment needed",
+    placeImg: "https://i0.wp.com/limitless-secrets.com/wp-content/uploads/2021/08/Best-Places-to-take-photos-with-the-Eiffel-Tower-Blog-Banner.png?fit=2240%2C1260&ssl=1"
   },
   {
     "id": 289846,
@@ -1163,9 +1230,10 @@ originalPrice: "17 USD",
     "currentPrice": "99 USD",
     "taxesAndCharges": "+11 USD taxes and charges",
     prepayment: "No prepayment needed",
+    placeImg: "https://i0.wp.com/limitless-secrets.com/wp-content/uploads/2021/08/Best-Places-to-take-photos-with-the-Eiffel-Tower-Blog-Banner.png?fit=2240%2C1260&ssl=1"
   },
 
-
+  //62
   //Hawaii
   //
   //
@@ -1187,6 +1255,7 @@ originalPrice: "17 USD",
     "currentPrice": "299 USD",
     "taxesAndCharges": "+83 USD taxes and charges",
     prepayment: "No prepayment needed",
+    placeImg: "https://www.travelandleisure.com/thmb/f_rDORCl4bSfbktUu2Gm-saHolI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/mauna-kea-besthawaii0216-771df2153a094b389fec930a0adac8e5.jpg",
   },
   {
     "id": 59902,
@@ -1205,6 +1274,7 @@ originalPrice: "17 USD",
     "currentPrice": "206 USD",
     "taxesAndCharges": "+67 USD taxes and charges",
     prepayment: "No prepayment needed",
+    placeImg: "https://www.travelandleisure.com/thmb/f_rDORCl4bSfbktUu2Gm-saHolI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/mauna-kea-besthawaii0216-771df2153a094b389fec930a0adac8e5.jpg",
   },
   {
     "id": 367983,
@@ -1223,6 +1293,7 @@ originalPrice: "17 USD",
     "currentPrice": "285 USD",
     "taxesAndCharges": "+81 USD taxes and charges",
     prepayment: "No prepayment needed",
+    placeImg: "https://www.travelandleisure.com/thmb/f_rDORCl4bSfbktUu2Gm-saHolI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/mauna-kea-besthawaii0216-771df2153a094b389fec930a0adac8e5.jpg",
   },
   {
     "id": 383756,
@@ -1241,6 +1312,7 @@ originalPrice: "17 USD",
     "currentPrice": "316 USD",
     "taxesAndCharges": "+92 USD taxes and charges",
     prepayment: "No prepayment needed",
+    placeImg: "https://www.travelandleisure.com/thmb/f_rDORCl4bSfbktUu2Gm-saHolI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/mauna-kea-besthawaii0216-771df2153a094b389fec930a0adac8e5.jpg",
   },
 
   {
@@ -1259,7 +1331,8 @@ originalPrice: "17 USD",
     "originalPrice": "324 USD",
     "currentPrice": "233 USD",
     "taxesAndCharges": "+74 USD taxes and charges",
-    "prepayment": ""
+    "prepayment": "",
+    placeImg: "https://www.travelandleisure.com/thmb/f_rDORCl4bSfbktUu2Gm-saHolI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/mauna-kea-besthawaii0216-771df2153a094b389fec930a0adac8e5.jpg",
   },
   {
     "id": 9236868,
@@ -1277,7 +1350,8 @@ originalPrice: "17 USD",
     "originalPrice": "334 USD",
     "currentPrice": "334 USD",
     "taxesAndCharges": "+89 USD taxes and charges",
-    "prepayment": "No prepayment needed"
+    "prepayment": "No prepayment needed",
+    placeImg: "https://www.travelandleisure.com/thmb/f_rDORCl4bSfbktUu2Gm-saHolI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/mauna-kea-besthawaii0216-771df2153a094b389fec930a0adac8e5.jpg",
   },
   {
     "id": 58502,
@@ -1295,7 +1369,8 @@ originalPrice: "17 USD",
     "originalPrice": "260 USD",
     "currentPrice": "260 USD",
     "taxesAndCharges": "+57 USD taxes and charges",
-    "prepayment": "No prepayment needed"
+    "prepayment": "No prepayment needed",
+    placeImg: "https://www.travelandleisure.com/thmb/f_rDORCl4bSfbktUu2Gm-saHolI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/mauna-kea-besthawaii0216-771df2153a094b389fec930a0adac8e5.jpg",
   },
   {
     "id": 56914,
@@ -1313,7 +1388,8 @@ originalPrice: "17 USD",
     "originalPrice": "389 USD",
     "currentPrice": "389 USD",
     "taxesAndCharges": "+121 USD taxes and charges",
-    "prepayment": ""
+    "prepayment": "",
+    placeImg: "https://www.travelandleisure.com/thmb/f_rDORCl4bSfbktUu2Gm-saHolI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/mauna-kea-besthawaii0216-771df2153a094b389fec930a0adac8e5.jpg",
   },
   {
     "id": 1324135,
@@ -1331,7 +1407,8 @@ originalPrice: "17 USD",
     "originalPrice": "339 USD",
     "currentPrice": "339 USD",
     "taxesAndCharges": "+84 USD taxes and charges",
-    "prepayment": "No prepayment needed"
+    "prepayment": "No prepayment needed",
+    placeImg: "https://www.travelandleisure.com/thmb/f_rDORCl4bSfbktUu2Gm-saHolI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/mauna-kea-besthawaii0216-771df2153a094b389fec930a0adac8e5.jpg",
   },
   {
     "id": 5555532,
@@ -1349,7 +1426,8 @@ originalPrice: "17 USD",
     "originalPrice": "229 USD",
     "currentPrice": "206 USD",
     "taxesAndCharges": "+225 USD taxes and charges",
-    "prepayment": ""
+    "prepayment": "",
+    placeImg: "https://www.travelandleisure.com/thmb/f_rDORCl4bSfbktUu2Gm-saHolI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/mauna-kea-besthawaii0216-771df2153a094b389fec930a0adac8e5.jpg",
   },
   {
     "id": 180624,
@@ -1367,9 +1445,11 @@ originalPrice: "17 USD",
     "originalPrice": "363 USD",
     "currentPrice": "290 USD",
     "taxesAndCharges": "+111 USD taxes and charges",
-    "prepayment": "No prepayment needed"
+    "prepayment": "No prepayment needed",
+    placeImg: "https://www.travelandleisure.com/thmb/f_rDORCl4bSfbktUu2Gm-saHolI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/mauna-kea-besthawaii0216-771df2153a094b389fec930a0adac8e5.jpg",
   }
 
+  //73
 
 
 
