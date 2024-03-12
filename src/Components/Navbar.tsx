@@ -1,18 +1,23 @@
 "use client";
+
 import Image from "next/image";
 import Link from "next/link";
-import React, { useState } from "react";
+import React from "react";
 import CustomButton from "./CustomButton";
 import DropdownButton from "./DropdownButton";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { Button, buttonVariants } from "./ui/button";
 import UserAccountNav from "./UserAccountNav";
+import { AiOutlineHome } from "react-icons/ai";
+import { HiOutlineSpeakerphone } from "react-icons/hi";
+import { MdOutlineHotel } from "react-icons/md";
+import { MdOutlinePlace } from "react-icons/md";
+import { FiPhone } from "react-icons/fi";
+
 
 const Navbar = () => {
-  const [isScrollable, setIsScrollable] = useState(false);
-
   return (
-    <header className="w-full fixed top-0 z-10 bg-gradient-to-b from-amber-300 from-25%">
+    <header className="w-full fixed top-0 z-10 bg-gradient-to-b from-amber-300 from-65%">
       <nav className="max-w-[2000px] mx-auto flex justify-between sm:px-16 px-6 py-4 ">
         <Link href="/" className="flex">
           <Image
@@ -24,27 +29,24 @@ const Navbar = () => {
           />
         </Link>
         <div className="">
-          <ul style={{ color: "#1f2937" }} className="hidden md:flex">
-            <Link href="/">
-              <CustomButton title="Home" containerStyles="nav-button" />
+          <ul style={{ color: "#1f2937" }} className="hidden md:flex items-center">
+            <Link href="/" className="nav-link px-4" title="Home">
+              <AiOutlineHome size={38} className="text-[#2C5768] hover:text-[#3c7a93] transition duration-300 ease-in-out transform hover:scale-110"/>
             </Link>
-            <Link href="/#offers">
-              <CustomButton title="Offers" containerStyles="nav-button" />
+            <Link href="/#offers" className="nav-link px-4" title="Offers">
+              <HiOutlineSpeakerphone size={38} className="text-[#2C5768] hover:text-[#3c7a93] transition duration-300 ease-in-out transform hover:scale-110"/>
             </Link>
-            <Link href="/#hotels">
-              <CustomButton title="Hotels" containerStyles="nav-button" />
+            <Link href="/#hotels" className="nav-link px-4" title="Hotels">
+              <MdOutlineHotel size={38} className="text-[#2C5768] hover:text-[#3c7a93] transition duration-300 ease-in-out transform hover:scale-110"/>
             </Link>
-            <Link href="/#places">
-              <CustomButton title="Places" containerStyles="nav-button" />
+            <Link href="/#places" className="nav-link px-4" title="Places">
+              <MdOutlinePlace size={38} className="text-[#2C5768] hover:text-[#3c7a93] transition duration-300 ease-in-out transform hover:scale-110"/>
             </Link>
-            <Link href="/contact">
-              <CustomButton title="Contact" containerStyles="nav-button" />
+            <Link href="/contact" className="nav-link px-4" title="Contact">
+              <FiPhone size={38} className="text-[#2C5768] hover:text-[#3c7a93] transition duration-300 ease-in-out transform hover:scale-110"/>
             </Link>
-            <Link href="/faq">
-              <CustomButton title="FAQ" containerStyles="nav-button" />
-            </Link>
-            <Link href="/pages">
-              <CustomButton title="Login" containerStyles="nav-button" />
+            <Link href="/faq" className="nav-link px-4" title="FAQ">
+              <p className="text-3xl font-semibold text-[#2C5768] hover:text-[#3c7a93] transition duration-300 ease-in-out transform hover:scale-110">FAQ</p>
             </Link>
             <DropdownButton />
           </ul>
