@@ -1,10 +1,13 @@
 "use client"
-import React from 'react'
+import React, { useState } from 'react'
 import { hotelInfo } from '@/app/pages/search/components/hotels'
 import Link from 'next/link'
 import Image from 'next/image'
+import { useRouter } from 'next/router'
 
 const Popular = () => {
+  const [location, setLocation] = useState<string>('');
+
 
   const Dhaka = hotelInfo[0].placeImg
   const Mumbai = hotelInfo[34].placeImg
@@ -41,7 +44,8 @@ const Popular = () => {
       <div className="flex">
             {imagesTop.map((image) => (
                 <div key={image.alt} className="relative mt-4 mr-4">
-                    <Link href={`pages/search`}>
+                    
+                    <Link href={`/pages/search?location=${encodeURIComponent(image.alt)}`} >
                   <img src={image.src} alt={image.alt} className={`rounded-md ${image.alt === "Dhaka" ? "w-[870px]  h-[450px]" : "w-[1000px]  h-[450px]"} `} />
                         <div  className="absolute  left-10 top-0 h-16 w-24 flex items-center justify-center font-semibold">
                             <p className=" text-white text-sm md:text-lg lg:text-xl drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] 	">{image.alt}</p>
@@ -55,7 +59,7 @@ const Popular = () => {
       <div className="flex mt-4">
       {imagesBottom.map((image) => (
         <div key={image.alt} className="relative  mr-4 ">
-            <Link href={`pages/search`}>
+            <Link href={`/pages/search?location=${encodeURIComponent(image.alt)}`}>
                 <img src={image.src} alt={image.alt} className="w-full h-full object-cover rounded-md" />
 
                     <div  className="absolute left-10 top-0 h-16 w-24  flex items-center justify-center font-semibold ">

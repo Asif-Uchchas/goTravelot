@@ -44,7 +44,8 @@ const Hero = () => {
           <Offer/>
         </div>
         <div className=" flex items-center justify-center  relative">
-          <ResponsiveComponentSwitcher desktopComponent={<Popular />} mobileComponent={<Popular_mobile />} />
+          {/* <ResponsiveComponentSwitcher desktopComponent={<Popular />} mobileComponent={<Popular_mobile />} /> */}
+          <Popular/>
         </div>
         <div className=" flex items-center justify-center  relative">
           <TopHotels/>
