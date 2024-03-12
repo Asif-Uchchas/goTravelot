@@ -5,53 +5,43 @@ import ResponsiveComponentSwitcher from "./ResponsiveComponentSwitcher";
 import { hotelInfo } from "@/app/pages/search/components/hotels";
 import Link from "next/link";
 
-
 const TopHotels = () => {
   const hotels = hotelInfo.filter((hotel) => hotel.rating >= 8);
-
 
   return (
     <div className="w-screen items-center justify-center p-10" id="hotels">
       <div className="pt-5">
-        <p className="text-2xl font-semibold md:text-3xl lg:text-4xl">Top Hotels</p>
-        <p className="text-lg md:text-lg lg:text-xl">Top rated hotels for travellers</p>
+        <p className="text-2xl font-semibold md:text-3xl lg:text-4xl">
+          Top Hotels
+        </p>
+        <p className="text-lg md:text-lg lg:text-xl">
+          Top rated hotels for travellers
+        </p>
       </div>
 
-      <div className="flex space-x-4 w-full py-5 overflow-x-scroll">
+      <div className="flex space-x-4 w-full overflow-x-scroll overflow-hidden">
         {hotels.map((hotel) => (
           <div
             key={hotel.id}
-            className="relative space-y-1 shrink-0 cursor-pointer justify content"
+            className="relative w-80 space-y-2 shrink-0 cursor-pointer"
           >
-            <Link href={`pages/hotels/${hotel.id}`}
-              className="block relative">
+            <Link href={`pages/hotels/${hotel.id}`}>
               <img
-                className="w-80 h-72 object-cover rounded-lg pb-2"
+                className="w-full h-48 object-cover rounded-lg"
                 src={hotel.image}
                 alt={hotel.name}
               />
 
-              {/* Updated positioning and styles for hotel name */}
-              <ResponsiveComponentSwitcher
-                desktopComponent={
-                  <div className="absolute bottom-0 left-0 w-full">
-                    <div className="bg-black bg-opacity-50">
-                      <p className="text-white text-sm md:text-lg lg:text-xl p-2 truncate">
-                        {hotel.name}
-                      </p>
-                    </div>
-                  </div>
-                }
-                mobileComponent={
-                  <div className="absolute bottom-0 left-0 w-full">
-                    <div className="bg-black bg-opacity-50">
-                      <p className="text-white text-sm md:text-lg lg:text-xl p-2 truncate">
-                        {hotel.name}
-                      </p>
-                    </div>
-                  </div>
-                }
-              />
+              <div className="flex text-gray-700 mt-2 justify-between">
+                <div>
+                  <p className="font-medium mr-3">{hotel.name}</p>
+                </div>
+                <div className=" flex justify-start">
+                  <span className="text-sm bg-[#E9B208] rounded-full px-3 py-1 text-white h-7">
+                    {hotel.rating}
+                  </span>
+                </div>
+              </div>
             </Link>
           </div>
         ))}
