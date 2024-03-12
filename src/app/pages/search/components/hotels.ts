@@ -37,7 +37,8 @@ export const hotelInfo: Hotel[] = [
     currentPrice: "62 USD",
     taxesAndCharges: "Includes taxes and charges",
     prepayment: "Free cancellation, No prepayment needed",
-    placeImg: "https://lh3.googleusercontent.com/p/AF1QipMToRxg6fSdlZnoKL4ia41erUvEI_XPhm4Bd-NX=s680-w680-h510",
+    placeImg: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/16/b2/fe/ahsan-monjil.jpg?w=500&h=400&s=1",
+    // placeImg: "https://lh3.googleusercontent.com/p/AF1QipMToRxg6fSdlZnoKL4ia41erUvEI_XPhm4Bd-NX=s680-w680-h510",
   },
   {
     id: 9130663,
@@ -56,7 +57,7 @@ export const hotelInfo: Hotel[] = [
     currentPrice: "43 USD",
     taxesAndCharges: "Includes taxes and charges",
     prepayment: "Free cancellation, No prepayment needed",
-    placeImg: "https://lh3.googleusercontent.com/p/AF1QipMToRxg6fSdlZnoKL4ia41erUvEI_XPhm4Bd-NX=s680-w680-h510",
+    placeImg: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/16/b2/fe/ahsan-monjil.jpg?w=500&h=400&s=1",
   },
   {
     id: 582848,
@@ -75,7 +76,7 @@ export const hotelInfo: Hotel[] = [
     currentPrice: "43 USD",
     taxesAndCharges: "Includes taxes and charges",
     prepayment: "Free cancellation, No prepayment needed",
-    placeImg: "https://lh3.googleusercontent.com/p/AF1QipMToRxg6fSdlZnoKL4ia41erUvEI_XPhm4Bd-NX=s680-w680-h510",
+    placeImg: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/16/b2/fe/ahsan-monjil.jpg?w=500&h=400&s=1",
   },
   {
     id: 9670810,
@@ -94,7 +95,7 @@ export const hotelInfo: Hotel[] = [
     currentPrice: "33 USD",
     taxesAndCharges: "Includes taxes and charges",
     prepayment: "Free cancellation, No prepayment needed",
-    placeImg: "https://lh3.googleusercontent.com/p/AF1QipMToRxg6fSdlZnoKL4ia41erUvEI_XPhm4Bd-NX=s680-w680-h510",
+    placeImg: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/16/b2/fe/ahsan-monjil.jpg?w=500&h=400&s=1",
   },
   {
     id: 1794582,
@@ -113,7 +114,7 @@ export const hotelInfo: Hotel[] = [
     currentPrice: "45.54 USD",
     taxesAndCharges: "Includes taxes and charges",
     prepayment: "Free cancellation, No prepayment needed",
-    placeImg: "https://lh3.googleusercontent.com/p/AF1QipMToRxg6fSdlZnoKL4ia41erUvEI_XPhm4Bd-NX=s680-w680-h510",
+    placeImg: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/16/b2/fe/ahsan-monjil.jpg?w=500&h=400&s=1",
   },
   {
     id: 8965751,
@@ -132,7 +133,7 @@ export const hotelInfo: Hotel[] = [
     currentPrice: "36 USD",
     taxesAndCharges: "Includes taxes and charges",
     prepayment: "Free cancellation, No prepayment needed",
-    placeImg: "https://lh3.googleusercontent.com/p/AF1QipMToRxg6fSdlZnoKL4ia41erUvEI_XPhm4Bd-NX=s680-w680-h510",
+    placeImg: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/16/b2/fe/ahsan-monjil.jpg?w=500&h=400&s=1",
   },
   {
     id: 9299899,
@@ -151,7 +152,7 @@ export const hotelInfo: Hotel[] = [
     currentPrice: "31 USD",
     taxesAndCharges: "Includes taxes and charges",
     prepayment: "Free cancellation, No prepayment needed",
-    placeImg: "https://lh3.googleusercontent.com/p/AF1QipMToRxg6fSdlZnoKL4ia41erUvEI_XPhm4Bd-NX=s680-w680-h510",
+    placeImg: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/16/b2/fe/ahsan-monjil.jpg?w=500&h=400&s=1",
   },
 
   {
@@ -171,7 +172,7 @@ export const hotelInfo: Hotel[] = [
     currentPrice: "32 USD",
     taxesAndCharges: "Includes taxes and charges",
     prepayment: "Free cancellation, No prepayment needed",
-    placeImg: "https://lh3.googleusercontent.com/p/AF1QipMToRxg6fSdlZnoKL4ia41erUvEI_XPhm4Bd-NX=s680-w680-h510",
+    placeImg: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/16/b2/fe/ahsan-monjil.jpg?w=500&h=400&s=1",
   },
   {
     id: 469851,
@@ -190,7 +191,7 @@ export const hotelInfo: Hotel[] = [
     currentPrice: "38 USD",
     taxesAndCharges: "Includes taxes and charges",
     prepayment: "Free cancellation, No prepayment needed",
-    placeImg: "https://lh3.googleusercontent.com/p/AF1QipMToRxg6fSdlZnoKL4ia41erUvEI_XPhm4Bd-NX=s680-w680-h510",
+    placeImg: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/16/b2/fe/ahsan-monjil.jpg?w=500&h=400&s=1",
   },
   {
     id: 621624,
@@ -209,7 +210,7 @@ export const hotelInfo: Hotel[] = [
     currentPrice: "90 USD",
     taxesAndCharges: "Includes taxes and charges",
     prepayment: "Free cancellation, No prepayment needed",
-    placeImg: "https://lh3.googleusercontent.com/p/AF1QipMToRxg6fSdlZnoKL4ia41erUvEI_XPhm4Bd-NX=s680-w680-h510",
+    placeImg: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/16/b2/fe/ahsan-monjil.jpg?w=500&h=400&s=1",
   },
   {
     id: 11309706,
@@ -228,7 +229,7 @@ export const hotelInfo: Hotel[] = [
     currentPrice: "21 USD",
     taxesAndCharges: "Includes taxes and charges",
     prepayment: "Free cancellation, No prepayment needed",
-    placeImg: "https://lh3.googleusercontent.com/p/AF1QipMToRxg6fSdlZnoKL4ia41erUvEI_XPhm4Bd-NX=s680-w680-h510",
+    placeImg: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/16/b2/fe/ahsan-monjil.jpg?w=500&h=400&s=1",
   },
   {
     id: 6664048,
@@ -247,7 +248,7 @@ export const hotelInfo: Hotel[] = [
     currentPrice: "35 USD",
     taxesAndCharges: "Includes taxes and charges",
     prepayment: "Free cancellation, No prepayment needed",
-    placeImg: "https://lh3.googleusercontent.com/p/AF1QipMToRxg6fSdlZnoKL4ia41erUvEI_XPhm4Bd-NX=s680-w680-h510",
+    placeImg: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/16/b2/fe/ahsan-monjil.jpg?w=500&h=400&s=1",
   },
   {
     id: 6044188,
@@ -266,7 +267,7 @@ export const hotelInfo: Hotel[] = [
     prepayment: "No prepayment needed",
     originalPrice: "19 USD",
     currentPrice: "17 USD",
-    placeImg: "https://lh3.googleusercontent.com/p/AF1QipMToRxg6fSdlZnoKL4ia41erUvEI_XPhm4Bd-NX=s680-w680-h510",
+    placeImg: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/16/b2/fe/ahsan-monjil.jpg?w=500&h=400&s=1",
   },
 
   {
@@ -286,7 +287,7 @@ export const hotelInfo: Hotel[] = [
     prepayment: "Free cancellation, No prepayment needed",
     originalPrice: "21 USD",
     currentPrice: "19 USD",
-    placeImg: "https://lh3.googleusercontent.com/p/AF1QipMToRxg6fSdlZnoKL4ia41erUvEI_XPhm4Bd-NX=s680-w680-h510",
+    placeImg: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/16/b2/fe/ahsan-monjil.jpg?w=500&h=400&s=1",
   },
   {
     id: 1757950,
@@ -305,7 +306,7 @@ export const hotelInfo: Hotel[] = [
     prepayment: "Free cancellation, No prepayment needed",
 originalPrice: "17 USD",
     currentPrice: "16 USD",
-    placeImg: "https://lh3.googleusercontent.com/p/AF1QipMToRxg6fSdlZnoKL4ia41erUvEI_XPhm4Bd-NX=s680-w680-h510",
+    placeImg: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/16/b2/fe/ahsan-monjil.jpg?w=500&h=400&s=1",
   },
   {
     id: 7960061,
@@ -324,7 +325,7 @@ originalPrice: "17 USD",
     currentPrice: "17 USD",
     taxesAndCharges: "Includes taxes and charges",
     prepayment: "Free cancellation, No prepayment needed",
-    placeImg: "https://lh3.googleusercontent.com/p/AF1QipMToRxg6fSdlZnoKL4ia41erUvEI_XPhm4Bd-NX=s680-w680-h510",
+    placeImg: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/16/b2/fe/ahsan-monjil.jpg?w=500&h=400&s=1",
   },
   {
     id: 8616561,
@@ -343,7 +344,7 @@ originalPrice: "17 USD",
     currentPrice: "11 USD",
     taxesAndCharges: "Includes taxes and charges",
     prepayment: "No prepayment needed",
-    placeImg: "https://lh3.googleusercontent.com/p/AF1QipMToRxg6fSdlZnoKL4ia41erUvEI_XPhm4Bd-NX=s680-w680-h510",
+    placeImg: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/16/b2/fe/ahsan-monjil.jpg?w=500&h=400&s=1",
   },
   {
     id: 659278,
@@ -362,7 +363,7 @@ originalPrice: "17 USD",
     currentPrice: "119 USD",
     taxesAndCharges: "Includes taxes and charges",
     prepayment: "Free cancellation, No prepayment needed",
-    placeImg: "https://lh3.googleusercontent.com/p/AF1QipMToRxg6fSdlZnoKL4ia41erUvEI_XPhm4Bd-NX=s680-w680-h510",
+    placeImg: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/16/b2/fe/ahsan-monjil.jpg?w=500&h=400&s=1",
   },
 
   {
@@ -382,7 +383,7 @@ originalPrice: "17 USD",
     currentPrice: "179 USD",
     taxesAndCharges: "Includes taxes and charges",
     prepayment: "Free cancellation, No prepayment needed",
-    placeImg: "https://lh3.googleusercontent.com/p/AF1QipMToRxg6fSdlZnoKL4ia41erUvEI_XPhm4Bd-NX=s680-w680-h510",
+    placeImg: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/16/b2/fe/ahsan-monjil.jpg?w=500&h=400&s=1",
   },
   {
     id: 10833831,
@@ -401,7 +402,7 @@ originalPrice: "17 USD",
     currentPrice: "15 USD",
     taxesAndCharges: "Includes taxes and charges",
     prepayment: "Free cancellation, No prepayment needed",
-    placeImg: "https://lh3.googleusercontent.com/p/AF1QipMToRxg6fSdlZnoKL4ia41erUvEI_XPhm4Bd-NX=s680-w680-h510",
+    placeImg: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/16/b2/fe/ahsan-monjil.jpg?w=500&h=400&s=1",
   },
 
   {
@@ -1879,9 +1880,5 @@ originalPrice: "17 USD",
   //   prepayment: "No prepayment needed",
   //  },
   
+];
   
-  
-  
-  
-  
-  ];
