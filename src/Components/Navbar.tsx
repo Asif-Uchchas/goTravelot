@@ -1,20 +1,15 @@
-// "use client";
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 import CustomButton from "./CustomButton";
 import DropdownButton from "./DropdownButton";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
-import { getServerSession } from "next-auth";
-import { authOptions } from "@/lib/auth";
 import { Button, buttonVariants } from "./ui/button";
-import { signOut } from "next-auth/react";
 import UserAccountNav from "./UserAccountNav";
 
-const Navbar = async () => {
-  const session = await getServerSession(authOptions);
-  // const [isScrollable, setIsScrollable] = useState(false);
-  
+const Navbar = () => {
+  const [isScrollable, setIsScrollable] = useState(false);
 
   return (
     <header className="w-full fixed top-0 z-10 bg-gradient-to-b from-amber-300 from-25%">
@@ -48,14 +43,9 @@ const Navbar = async () => {
             <Link href="/faq">
               <CustomButton title="FAQ" containerStyles="nav-button" />
             </Link>
-            {session?.user ? (
-               <UserAccountNav />
-            ):(
-              <Link className={buttonVariants()} href="/sign-in">
-                Sign In
-              </Link>
-            )}
-
+            <Link href="/pages">
+              <CustomButton title="Login" containerStyles="nav-button" />
+            </Link>
             <DropdownButton />
           </ul>
           
