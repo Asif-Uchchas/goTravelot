@@ -48,6 +48,9 @@ const Navbar = () => {
             <Link href="/faq" className="nav-link px-4" title="FAQ">
               <p className="text-3xl font-semibold text-[#2C5768] hover:text-[#3c7a93] transition duration-300 ease-in-out transform hover:scale-110">FAQ</p>
             </Link>
+            <Link href="/pages" className="nav-link px-4" title="Login">
+              <p className="text-3xl font-semibold text-[#2C5768] hover:text-[#3c7a93] transition duration-300 ease-in-out transform hover:scale-110">Login</p>
+            </Link>
             <DropdownButton />
           </ul>
           
