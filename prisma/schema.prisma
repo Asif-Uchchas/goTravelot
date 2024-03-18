@@ -36,17 +36,23 @@ model Reservation {
 }
 
 model Hotel {
-  id Int @id @default(autoincrement())
-  name String
-  description String
-  hotelImage  String?
-  tag Tag[]
-  reservations Reservation[]
-}
+  id              Int  @id 
+  description     String
+  name            String
+  reviewCount     Int
+  rating          Float
+  image           String
+  tag             String[]
+  location        String
+  distance        String
+  sustainability  String
+  propertyFeatures String
+  roomType        String
+  originalPrice   String
+  currentPrice    String
+  taxesAndCharges String
+  prepayment      String
+  placeImg        String
 
-model Tag {
-  id Int @id @default(autoincrement())
-  title String
-  tagType String
-  hotels Hotel[]
+  reservations Reservation[]
 }

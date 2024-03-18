@@ -1,17 +1,30 @@
 'use client'
-import React from "react";
-import { usePathname, useSearchParams } from "next/navigation";
+import React, { useState } from "react";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { hotelInfo } from "../../search/components/hotels";
+import { Button } from "@nextui-org/react";
 
 const HotelPage = () => {
   const retrieveId = usePathname();
   const retrievedId = retrieveId.split("/")[3];
   const id = Number(retrievedId) || null;
+  const router = useRouter()
 
   const hotel = hotelInfo.find((h) => h.id === id);
 
   if (!id || !hotel) {
     return <div className="container mx-auto mt-20">Hotel not found!</div>;
+  }
+
+  const [isLoggedIn, setIsLoggedIn] = useState('false')
+
+  const handleHotelBooking = () => {
+
+    if (isLoggedIn) {
+      
+    }
+
+    return router.push("/pages")
   }
 
   return (
@@ -63,6 +76,9 @@ const HotelPage = () => {
               <p className="text-lg font-semibold text-gray-800">Prepayment:</p>
               <p className="text-gray-600">{hotel.prepayment}</p>
             </div>
+          </div>
+          <div>
+            <Button className="block border bg-blue-500" onClick={handleHotelBooking}>Book Now!</Button>
           </div>
         </div>
       </div>

@@ -1878,7 +1878,6 @@ export default async function handler(
     ],
   });
 
-  const restaurants = await prisma.hotel.findMany();
 
 
   res.status(200).json({ name: "hello" });
