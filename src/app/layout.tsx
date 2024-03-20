@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   description: "A simple travelling and hotel booking website",
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
