@@ -24,7 +24,9 @@ export default {
           const { email, password } = validatedFields.data;
 
           const user = await getUserByEmail(email);
+          
           if (!user || !user.password) return Promise.resolve(null);
+          
 
           const passwordsMatch = await bcrypt.compare(
             password,
@@ -35,6 +37,7 @@ export default {
             console.log(user.name);
             console.log("Passwords match, returning user");
             return Promise.resolve(user);
+            
           }
         }
 

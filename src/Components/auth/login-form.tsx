@@ -23,13 +23,13 @@ import { useSearchParams } from "next/navigation";
 
 export const LoginForm = () => {
 
-  const searchParams = useSearchParams()
-  const urlError = searchParams.get("error") === "OAuthAccountNotLinked"
-    ? "Email already in use with different proider"
-    : ""
+  const searchParams = useSearchParams();
+  const urlError = searchParams && searchParams.get("error") === "OAuthAccountNotLinked"
+    ? "Email already in use with different provider"
+    : "";
   
-    const [error, setError] = useState<string | undefined>("")
-    const [success, setSuccess] = useState<string | undefined>("")
+    const [error, setError] = useState<string | undefined>("");
+    const [success, setSuccess] = useState<string | undefined>("");
      
     const [isPending, startTransition] = useTransition()
     
@@ -50,10 +50,19 @@ export const LoginForm = () => {
 
     startTransition(() => {
       login(values).then((data) => {
-        setError(data?.error)
+        if(data?.error){
+          form.reset();
+          setError(data?.error)
+        }
+        // if(data?.success){
+        //   form.reset();
+        //   setSuccess(data?.success)
+        // }
+
         // Todo: Add when we add 2FA
         // setSuccess(data?.success)
       })
+      .catch(()=>setError("Something went wrong"));
     })
   };
 

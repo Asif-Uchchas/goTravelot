@@ -11,7 +11,7 @@ export const {
     signIn,
     signOut,
 } = NextAuth({
-    // pages: {
+  //   pages: {
   //   signIn: '/auth/login',
   //   error: '/auth/error',
   // },
@@ -30,9 +30,12 @@ export const {
 
     //   const existingUser = await getUserById(user.id as string)
 
-    //   if (!existingUser || !existingUser.emailVerified) {
-    //     return true
-    //   }
+
+    //   if(!existingUser?.emailVerified) return false;
+
+    //   // if (!existingUser || !existingUser.emailVerified) {
+    //   //   return true
+    //   // }
     //   return true
     // },
     

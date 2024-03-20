@@ -38,13 +38,13 @@ const Navbar = () => {
             <Link href="/" className="nav-link px-4" title="Home">
               <AiOutlineHome size={38} className="text-[#2C5768] hover:text-[#3c7a93] transition duration-300 ease-in-out transform hover:scale-110"/>
             </Link>
-            <Link href="/#offers" className="nav-link px-4" title="Offers">
+            <Link href="/offers" className="nav-link px-4" title="Offers">
               <HiOutlineSpeakerphone size={38} className="text-[#2C5768] hover:text-[#3c7a93] transition duration-300 ease-in-out transform hover:scale-110"/>
             </Link>
-            <Link href="/#hotels" className="nav-link px-4" title="Hotels">
+            <Link href="/hotels" className="nav-link px-4" title="Hotels">
               <MdOutlineHotel size={38} className="text-[#2C5768] hover:text-[#3c7a93] transition duration-300 ease-in-out transform hover:scale-110"/>
             </Link>
-            <Link href="/#places" className="nav-link px-4" title="Places">
+            <Link href="/places" className="nav-link px-4" title="Places">
               <MdOutlinePlace size={38} className="text-[#2C5768] hover:text-[#3c7a93] transition duration-300 ease-in-out transform hover:scale-110"/>
             </Link>
             <Link href="/contact" className="nav-link px-4" title="Contact">
