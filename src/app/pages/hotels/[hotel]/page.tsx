@@ -24,7 +24,7 @@ const HotelPage = () => {
       
     }
 
-    return router.push("/pages")
+    return router.push("/pages/booking")
   }
 
   return (
@@ -78,7 +78,7 @@ const HotelPage = () => {
             </div>
           </div>
           <div>
-            <Button className="block border bg-blue-500" onClick={handleHotelBooking}>Book Now!</Button>
+            <Button className="mt-4 block border bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" onClick={handleHotelBooking}>Book Now!</Button>
           </div>
         </div>
       </div>
